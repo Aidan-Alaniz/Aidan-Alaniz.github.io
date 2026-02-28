@@ -4,7 +4,7 @@ permalink: /resume/
 ---
 
 <div class="notice--info">
-  <strong>Switch Resume:</strong> You are viewing the <strong>Academic Resume</strong>. &nbsp;→ <a href="/athletic-resume/">View Athletic Resume</a>
+  Also available: <a href="/athletic-resume/">Athletic Resume</a>
 </div>
 
 
