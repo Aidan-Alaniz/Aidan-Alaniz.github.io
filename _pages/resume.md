@@ -3,11 +3,15 @@ title: Resume
 permalink: /resume/
 ---
 
+<div class="notice--info">
+  <strong>Switch Resume:</strong> You are viewing the <strong>Academic Resume</strong>. &nbsp;→ <a href="/athletic-resume/">View Athletic Resume</a>
+</div>
+
 
 # Jordan A. Alaniz
  
 [Jordan.alaniz@outlook.com](mailto:jordan.alaniz@outlook.com)  
-[LinkedIn](linkedin.com/in/jordan-alaniz) • [GitHub](github.com/jordan-alaniz) • [Download PDF](files/Jordan_Alaniz_Resume.pdf)
+[LinkedIn](https://linkedin.com/in/jordan-alaniz) • [GitHub](https://github.com/jordan-alaniz) • [Download PDF](/assets/files/Jordan_Alaniz_Resume.pdf)
 
 ---
 
