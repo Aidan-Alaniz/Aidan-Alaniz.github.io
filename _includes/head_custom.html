@@ -1,0 +1,61 @@
+<!-- Work-in-Progress Banner -->
+<style>
+  #wip-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f0a500;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 8px 48px 8px 16px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    z-index: 9999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+  }
+  #wip-banner-close {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #1a1a1a;
+    line-height: 1;
+    padding: 0 4px;
+  }
+  body.wip-banner-visible {
+    padding-top: 40px;
+  }
+</style>
+<script>
+  (function() {
+    var dismissed = false;
+    try { dismissed = localStorage.getItem('wip-banner-dismissed') === '1'; } catch(e) {}
+    if (dismissed) return;
+    var banner = document.createElement('div');
+    banner.id = 'wip-banner';
+    banner.setAttribute('role', 'status');
+    banner.innerHTML =
+      'This site is actively being built — some sections may be incomplete or change frequently. Thanks for your patience!' +
+      '<button id="wip-banner-close" aria-label="Dismiss notice">✕</button>';
+    function insertBanner() {
+      document.body.insertBefore(banner, document.body.firstChild);
+      document.body.classList.add('wip-banner-visible');
+      document.getElementById('wip-banner-close').addEventListener('click', function() {
+        banner.remove();
+        document.body.classList.remove('wip-banner-visible');
+        try { localStorage.setItem('wip-banner-dismissed', '1'); } catch(e) {}
+      });
+    }
+    if (document.body) {
+      insertBanner();
+    } else {
+      document.addEventListener('DOMContentLoaded', insertBanner);
+    }
+  })();
+</script>
