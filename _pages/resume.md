@@ -1,5 +1,5 @@
 ---
-title: Resume
+title: Academic Resume
 permalink: /resume/
 ---
 
