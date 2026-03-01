@@ -6,8 +6,6 @@ tags:
   - CAD
   - Engineering
   - Fusion 360
-header:
-  teaser: /assets/images/projects/trebuchet-teaser.jpg
 ---
 
 ## Overview

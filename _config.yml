@@ -61,7 +61,7 @@ plugins:
 
 author:
   name   : "Jordan Alaniz"
-  avatar :
+  avatar : "/assets/images/bio-photo.jpg"
   bio    : "High school student interested in engineering, simulation, and software development."
   links:
     - label: "Website"

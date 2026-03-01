@@ -7,8 +7,6 @@ tags:
   - Networking
   - Distributed Computing
   - Algorithms
-header:
-  teaser: /assets/images/projects/prime-cluster-teaser.jpg
 ---
 
 ## Overview

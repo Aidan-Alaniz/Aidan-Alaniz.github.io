@@ -7,8 +7,6 @@ tags:
   - Programming
   - IoT
   - Systems
-header:
-  teaser: /assets/images/projects/weather-sensor-teaser.jpg
 ---
 
 ## Overview
