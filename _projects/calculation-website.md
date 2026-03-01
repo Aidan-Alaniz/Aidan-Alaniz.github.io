@@ -7,8 +7,6 @@ tags:
   - CSS
   - JavaScript
   - Web Development
-header:
-  teaser: /assets/images/projects/calc-website-teaser.jpg
 ---
 
 ## Overview

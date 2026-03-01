@@ -25,8 +25,8 @@ I am a junior at the Alabama School of Cyber Technology and Engineering (ASCTE) 
 
 ## Recent Posts
 
-{% assign recent_posts = site.posts | limit: 2 %}
-{% for post in recent_posts %}
+{% assign recent_posts = site.posts %}
+{% for post in recent_posts limit:2 %}
 - **[{{ post.title }}]({{ post.url }})** — *{{ post.date | date: "%B %-d, %Y" }}*  
   {{ post.excerpt | strip_html | truncatewords: 25 }}
 {% endfor %}
