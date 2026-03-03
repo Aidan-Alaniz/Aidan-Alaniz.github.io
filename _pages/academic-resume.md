@@ -4,7 +4,8 @@ permalink: /academic-resume/
 ---
 
 
-# Jordan A. Alaniz
+
+## Jordan A. Alaniz - Academic Resume
  
 [Jordan.alaniz@outlook.com](mailto:jordan.alaniz@outlook.com)  
 [LinkedIn](https://linkedin.com/in/jordan-alaniz) • [GitHub](https://github.com/jordan-alaniz) • [Download PDF](/assets/files/Jordan_Alaniz_Resume.pdf)
