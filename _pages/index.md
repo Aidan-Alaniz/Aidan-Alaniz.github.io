@@ -27,7 +27,7 @@ feature_row:
 
 I am a junior at the Alabama School of Cyber Technology and Engineering (ASCTE) — passionate about engineering, software, and athletics. I compete on the varsity cross country and track teams, lead in clubs like CyberPatriot and National Beta Club, and spend my free time building things and optimizing systems.
 
----
+
 
 <!-- Navigation cards for Projects, Blog, and Resume (defined in the feature_row section of the front matter above) -->
 {% include feature_row %}
