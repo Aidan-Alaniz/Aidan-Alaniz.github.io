@@ -1,11 +1,7 @@
 ---
 title: Academic Resume
-permalink: /resume/
+permalink: /academic-resume/
 ---
-
-<div class="notice--info">
-  Also available: <a href="/athletic-resume/">Athletic Resume</a>
-</div>
 
 
 # Jordan A. Alaniz
