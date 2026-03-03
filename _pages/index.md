@@ -32,7 +32,7 @@ I am a junior at the Alabama School of Cyber Technology and Engineering (ASCTE) 
 <!-- Navigation cards for Projects, Blog, and Resume (defined in the feature_row section of the front matter above) -->
 {% include feature_row %}
 
----
+
 
 ## Recent Projects
 
