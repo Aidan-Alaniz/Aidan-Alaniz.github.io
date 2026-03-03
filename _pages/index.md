@@ -42,7 +42,7 @@ I am a junior at the Alabama School of Cyber Technology and Engineering (ASCTE) 
   {% include archive-single.html %}
 {% endfor %}
 
----
+
 
 ## Recent Posts
 
