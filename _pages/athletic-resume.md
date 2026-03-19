@@ -1,20 +1,20 @@
 ---
 title: Athletic Resume
 permalink: /athletic-resume/
+layout: default
+header_type: base
 ---
 
+## Aidan Alaniz — Athletic Profile
 
-## Jordan A. Alaniz — Athletic Profile
-
-**Sport:** Cross Country, Track & Field  
-**School:** Alabama School of Cyber Technology and Engineering (ASCTE)  
+**School:** Alabama School of Cyber Technology and Engineering (ASCTE)
 
 ---
 
 ## Cross Country
 
 - Varsity runner
-- **3rd place** in state for school classification
+- Placed **3rd in the state** for school classification
 
 ---
 
@@ -27,4 +27,10 @@ permalink: /athletic-resume/
 
 ---
 
-*Full athletic resume and recruiting profile coming soon.*
+## Archery
+
+- Competing at the **national level**
+
+---
+
+*Full athletic recruiting profile coming soon.*

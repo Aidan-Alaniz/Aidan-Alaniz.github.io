@@ -1,35 +1,77 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+remote_theme: dieghernan/chulapa
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Jordan Alaniz
-email: jordan.alaniz@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Student portfolio featuring projects, writing, and experiments in engineering and software.
-twitter_username:
-github_username: Jordan-Alaniz
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "dark"
-search: false
+title: Aidan Alaniz
+subtitle: "Student @ ASCTE"
+description: >-
+  Student portfolio featuring projects, engineering, and software development.
+email: aidandalaniz@gmail.com
+github_username: Aidan-Alaniz
+url: "https://Aidan-Alaniz.github.io"
+
+locale: en-US
+timezone: America/Chicago
+
+# Chulapa skin — Wandoo with dark mode overrides
+chulapa-skin:
+  skin: wandoo
+  vars:
+    body-bg: "#141f25"
+    body-color: "#d8e4ea"
+    light: "#1c2d36"
+    dark: "#0f1c22"
+    card-bg: "#1c2d36"
+    border-color: "#2a3a44"
+
+author:
+  name: "Aidan Alaniz"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Junior at ASCTE passionate about programming, engineering, and leadership."
+  location: "Huntsville, AL"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:aidandalaniz@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/aidan-alaniz/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Aidan-Alaniz"
+
+# Navigation
+navbar:
+  style: "dark"
+  nav:
+    - title: "Home"
+      url: "/"
+    - title: "Projects"
+      url: "/projects/"
+    - title: "Blog"
+      url: "/blog/"
+    - title: "Resume"
+      child:
+        - title: "Academic"
+          url: "/academic-resume/"
+        - title: "Athletic"
+          url: "/athletic-resume/"
+
+header:
+  type: "base"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Build settings
 markdown: kramdown
-# Outputting
+kramdown:
+  auto_ids: false
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -39,80 +81,30 @@ collections:
     output: true
     permalink: /projects/:path/
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jemoji
-  - jekyll-include-cache
-
-author:
-  name   : "Jordan Alaniz"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "High school student interested in engineering, simulation, and software development."
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jordan-alaniz/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jordan-alaniz"
-
-footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:jordan.alaniz@outlook.com"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jordan-alaniz-683b65387/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jordan-alaniz"
-
 defaults:
   - scope:
       path: ""
-      type: posts
     values:
-      layout: single
+      layout: "default"
       author_profile: true
-      read_time: false
-      comments: false
-      share: false
-      related: false
-  # _pages
+      header_type: "base"
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: single
+      layout: "default"
       author_profile: true
-  # _projects
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: "default"
+      author_profile: true
+      header_type: "post"
   - scope:
       path: ""
       type: projects
     values:
-      layout: single
+      layout: "default"
       author_profile: true
-      share: false
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+      header_type: "base"

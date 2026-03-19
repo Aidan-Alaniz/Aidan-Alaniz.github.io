@@ -3,161 +3,141 @@ title: Academic Resume
 permalink: /academic-resume/
 ---
 
+## Aidan Alaniz — Academic Resume
 
-
-## Jordan A. Alaniz — Academic Resume
- 
-[Jordan.alaniz@outlook.com](mailto:jordan.alaniz@outlook.com)  
-[LinkedIn](https://linkedin.com/in/jordan-alaniz) • [GitHub](https://github.com/jordan-alaniz) • [Download PDF](/assets/files/Jordan_Alaniz_Resume.pdf)
+[aidandalaniz@gmail.com](mailto:aidandalaniz@gmail.com) • [LinkedIn](https://www.linkedin.com/in/aidan-alaniz/) •  [GitHub](https://github.com/Aidan-Alaniz)
 
 ---
 
 ## SUMMARY
 
-Motivated and athletic junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong passion for cybersecurity and a commitment to continuous improvement. Strong academic foundation and diverse technical skill set, with experience competing as a varsity runner at the section and state level in track and cross country.
+Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong foundation in programming, engineering, and leadership. Skilled in Python, Java, HTML, and CAD, with hands-on experience in 3D printing, microcontroller work, and virtual machines. Proven ability to collaborate on projects, manage tasks in team settings, and apply engineering principles to real-world challenges. Actively involved in extracurriculars, demonstrating leadership through experience in the Civil Air Patrol and student government.
 
 ---
 
 ## EDUCATION
 
 **Alabama School of Cyber Technology and Engineering (ASCTE)**  
-GPA: 4.29 / 4.5  
-All courses taught at Honors/AP level  
+GPA: 4.29
 
-### Past AP Courses
-- AP Computer Science Principles  
-- AP Statistics  
-- AP Language  
-
-### Current AP Courses
-- AP Psychology  
-- AP Computer Science A  
-- AP Calculus  
+### AP Courses
+- AP Computer Science Principles
+- AP Computer Science A
+- AP Language and Composition
+- AP Calculus
 
 ### Electives
-- Graphic Arts  
-- CyberPatriot  
-- Fitness  
-- Human Factor Engineering  
-- Into the Cyberverse  
-- Music Technology  
-- Broadcast Radio Operations  
-- Office Aid  
+- Intro to Arduinos and Microcontrollers
+- Model Based System Engineering
+- Russian 1
 
 ---
 
-## VOLUNTEERING EXPERIENCE
+## EXPERIENCE
 
-**Total Service Hours (to date): 41**
+**Total Service Hours (to date): 45**
 
-### ASCTE Ambassador Volunteering  
-*2024–2025 School Year*  
-Staffed events to greet and welcome new students, assisted with event coordination and traffic flow, and upheld ASCTE core values as a student representative.  
-Service Hours: 14  
+### Local Pine Mountain Community Road Cleanup
+*2025*  
+Assisted in cleaning up and removing trash from local roads as part of a community event.
 
-### Pine Mountain Annual Bluegrass & BBQ Volunteer  
-*June 2023, 2024, 2025*  
-Assisted in event setup and fulfillment of BBQ pre-orders for annual community event.  
-Service Hours: 10  
+### Paralympic Time Trial Volunteer
+*2025*  
+Assisted in directing participants throughout the course.
 
-### Beta Club Blood Drive Volunteer  
-*February 2025*  
-Managed donor sign-in and monitored recovery area during blood drive.  
-Service Hours: 1  
+### Residential Activities Council
+*2024–Present*  
+Active member of ASCTE's Residential Council, in charge of planning and organizing weekend activities year-round.
+
+### ASCTE Halloween Trunk-or-Treat
+*2024*  
+Helped run multiple booths for ASCTE hosted trunk-or-treat activity.
+
+### ASCTE School Wide Cleanup
+*2024*  
+Helped clean up the school through Beta Club.
 
 ---
 
 ## PROJECTS
 
 ### 301/401 Projects
-- Designed and presented a cellular-based solution to reduce effects of stress and PTSD  
-- Designed, constructed, and tested a trebuchet using Fusion 360 with limited materials  
-- Excel-based data analysis and glider performance calculations  
-- Programmed and built a weather sensor as part of a larger system  
+
+**BioDesign Project**
+- Designed an organism to break down plastic in the ocean at a cellular level
+
+**Banterbird**
+- Created a web app based off Twitter while implementing Python backends with APIs
 
 ### 201/101 Projects
-- Built a functional calculation website using HTML, CSS, JavaScript  
-- Material testing to calculate Young’s Modulus of Elasticity  
-- Built vehicle backup sensor using basic circuits and programming  
-- Designed windmill to power LED  
-- Built egg-drop protective safety structure with limited materials  
 
-### Personal Projects
-- Optimized algorithms for fast prime number computation  
-- Built a small computer cluster network for distributed calculations  
+**White Paper**
+- Wrote a white paper on the negative effects of modern-day shoes
+
+### Personal Projects *(available on GitHub)*
+
+**Blackjack**
+- Created a text-based Blackjack game with customization options in Python
+
+**Pong**
+- Using a Raspberry Pi and a Sense Hat, created a Pong game using Python
+
+**Hangman**
+- Created a text-based Hangman game in Python
 
 ---
 
 ## LEADERSHIP
 
-### CAP Cadet Program – Senior Master Sergeant  
-*Springville Cadet Squadron, AL 126*  
-2022–2024  
-Led 12–15 cadets in drill practice and weekly activities. Maintained accountability and responsibility as Cadet Leader.  
-Positions: Bravo Flight Sergeant, Guidon Bearer, First Element Leader, Activities Officer  
+### CAP Cadet Program – Senior Master Sergeant
+*Springville Cadet Squadron*  
+Actively contributed to the program for several years, demonstrating leadership and responsibility.
 
-### ASCTE Ambassador  
-*2024–2025 School Year*  
-Represented ASCTE and upheld core values of Honor, Joy, Tenacity, Kindness, and Integrity. 
+### Junior SGA Team Representative
+Current member of the Student Government, actively representing my class's voice in meetings and aiding in large event planning and setup.
+
+### Residential Life Activities Council Subcommittee Leader
+Active member of the Council responsible for planning and running weekend activities on ASCTE's campus for the second year. Currently overseeing a subcommittee responsible for running House Events.
 
 ---
 
 ## KEY SKILLS
 
-### Programming
-- Python  
-- Java  
-- HTML, CSS, JavaScript  
-- Basic Linux Terminal  
-- Virtual Machines  
-- Basic Docker  
-
-### Technology & Cyber Skills
-- CTF Experience  
-- Basic Cisco Packet Tracer  
-- Windows OS Navigation  
-- Microsoft Suite  
-- Effective Research & Search Engine Use  
-
-### Professional Skills
-- Critical Thinking  
-- Professional Communication  
+- Python Programming
+- Java Programming
+- Linux Terminal
+- Virtual Machines
+- CAD Design
+- Excel
+- Soldering and Circuitry
+- Woodworking
+- 3D Printing
 
 ---
 
 ## AWARDS
 
-- 3× President’s List  
-- Cyber Award  
-- Perfect Attendance  
+- President's List (3×)
+- Mu Alpha Theta Member
+- Beta Club Member
 
 ---
 
 ## EXTRA-CURRICULAR ACTIVITIES
 
-- Cross Country  
-- Track & Field  
-- Wrestling  
-- CyberPatriot  
-- Beta Club  
-- ASCTE Ambassador Program  
-- Drama/Theatre Technology  
-- ASCTE Peer Helpers  
-- ASCTE Residential Activities Council Member  
-- Radio Club  
-- CAP Cadet Program (until 2024)  
-- Junior Fire Academy Training  
+- Cross Country (Varsity)
+- National Level Archery Team
+- SGA Team Representative
+- Residential Activities Council Subcommittee Leader
+- Junior Fire Academy
 
 ---
 
 ## CERTIFICATIONS
 
-- Wilderness First Responder – NOLS  
-- Basic Life Support (BLS) Provider – American Heart Association  
-- CPR/AED – Heart Saver  
-- IS-100.c Introduction to Incident Command System – FEMA  
-- IS-700.b Introduction to the National Incident Management System – FEMA  
-- Wilderness First Aid Intro/Medical Emergencies – University of Colorado System  
+- Wilderness First Responder
+- Basic Life Support
+- First Aid and CPR
 
 ---
 

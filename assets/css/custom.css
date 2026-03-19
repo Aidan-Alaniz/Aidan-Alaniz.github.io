@@ -1,0 +1,25 @@
+---
+---
+
+/* Hide header anchor permalink icons */
+.header-link {
+  display: none !important;
+}
+
+/* Hero subtitle link color override */
+.hero-chulapa a,
+.hero-chulapa a:visited,
+.hero-chulapa-image a,
+.hero-chulapa-image a:visited,
+.splash-chulapa a,
+.splash-chulapa-image a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.hero-chulapa a:hover,
+.hero-chulapa-image a:hover,
+.splash-chulapa a:hover {
+  text-decoration: underline !important;
+  color: #ffffff !important;
+}
