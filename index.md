@@ -9,7 +9,9 @@ subtitle: 'Junior at ASCTE &bull; <a href="https://www.linkedin.com/in/aidan-ala
 
 ## About Me
 
-I am a junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong passion for programming, engineering, and leadership. I am skilled in Python, Java, CAD, 3D printing, and microcontroller work, and I enjoy applying these skills to real-world challenges. Outside of academics, I compete on the Varsity Cross Country team and am part of a national-level Archery team. I am also actively involved in student life as a Junior SGA Representative and a Subcommittee Leader for the Residential Activities Council.
+I'm a junior at [ASCTE](https://www.ascte.org){:target="_blank"} with a passion for programming, engineering, and pushing myself both in and out of the classroom. I compete nationally in archery and varsity cross country, lead in student government, and build projects ranging from Python games to web apps.
+
+[Learn more about me →](/about/)
 
 ---
 

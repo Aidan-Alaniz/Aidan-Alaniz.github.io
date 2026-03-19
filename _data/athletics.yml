@@ -1,0 +1,111 @@
+archery:
+  high_score: 284
+  high_score_date: "March 1, 2025"
+  career_average: 266.56
+  nasp_profile: "https://nasptournaments.org/archertournamenthistory.aspx?ahid=656398&src=as"
+  tournaments:
+    - date: "2026-03-12"
+      label: "Buckhorn Reg '26"
+      name: "Buckhorn Regional"
+      score: 275
+      hs_boys_rank: "15 / 90"
+      grade_rank: "5 / 25"
+    - date: "2026-02-20"
+      label: "N. AL Pre-Reg '26"
+      name: "North Alabama Pre-Regional"
+      score: 266
+      hs_boys_rank: "44 / 134"
+      grade_rank: "13 / 36"
+    - date: "2026-02-10"
+      label: "JCHS '26"
+      name: "JCHS Archery Tournament"
+      score: 269
+      hs_boys_rank: "24 / 106"
+      grade_rank: "10 / 26"
+    - date: "2026-02-02"
+      label: "Liberty MS '26"
+      name: "Liberty Middle School Tournament"
+      score: 279
+      hs_boys_rank: "7 / 67"
+      grade_rank: "1 / 17"
+    - date: "2026-01-31"
+      label: "Knights Shootout '26"
+      name: "5th Annual Knights Shootout"
+      score: 274
+      hs_boys_rank: "17 / 77"
+      grade_rank: "6 / 21"
+    - date: "2026-01-23"
+      label: "GH Raider Bash '26"
+      name: "GH Raider Bash"
+      score: 271
+      hs_boys_rank: "27 / 95"
+      grade_rank: "9 / 32"
+    - date: "2026-01-09"
+      label: "Cullman KO '26"
+      name: "Cullman Kick-Off"
+      score: 274
+      hs_boys_rank: "20 / 153"
+      grade_rank: "6 / 38"
+    - date: "2025-05-08"
+      label: "E. Nationals '25"
+      name: "2025 US Eastern Nationals"
+      score: 269
+      hs_boys_rank: "1137 / 2554"
+      grade_rank: "299 / 685"
+    - date: "2025-04-11"
+      label: "Centershot Out. '25"
+      name: "Centershot Bullseye Outdoor"
+      score: 259
+      hs_boys_rank: "9 / 35"
+      grade_rank: "4 / 13"
+    - date: "2025-04-03"
+      label: "AL State '25"
+      name: "Alabama State Championship"
+      score: 266
+      hs_boys_rank: "112 / 284"
+      grade_rank: "28 / 74"
+    - date: "2025-03-20"
+      label: "Riverton Pre-St. '25"
+      name: "Riverton Pre-State Tournament"
+      score: 263
+      hs_boys_rank: "20 / 59"
+      grade_rank: "6 / 22"
+    - date: "2025-03-06"
+      label: "Buckhorn Reg '25"
+      name: "Buckhorn Regional"
+      score: 258
+      hs_boys_rank: "54 / 96"
+      grade_rank: "19 / 37"
+    - date: "2025-02-27"
+      label: "Eagle Eye '25"
+      name: "7th Eagle Eye Archery Tournament"
+      score: 284
+      hs_boys_rank: "12 / 115"
+      grade_rank: "4 / 39"
+    - date: "2025-02-21"
+      label: "N. AL Pre-Reg '25"
+      name: "North Alabama Pre-Regional"
+      score: 260
+      hs_boys_rank: "54 / 120"
+      grade_rank: "12 / 39"
+    - date: "2025-02-04"
+      label: "JCHS '25"
+      name: "JCHS Archery Tournament"
+      score: 254
+      hs_boys_rank: "58 / 100"
+      grade_rank: "21 / 37"
+    - date: "2025-01-24"
+      label: "GH Raider Bash '25"
+      name: "GH Raider Bash"
+      score: 244
+      hs_boys_rank: "61 / 85"
+      grade_rank: "19 / 30"
+
+cross_country:
+  pr_5k: "22:30"
+  milesplit_profile: "https://al.milesplit.com/athletes/16850994-alaniz-aidan"
+  results:
+    - date: "2025"
+      meet: "Personal Record"
+      time: "22:30"
+      note: "5K PR"
