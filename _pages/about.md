@@ -15,7 +15,7 @@ header_type: base
   <div>
     <h2 style="margin-top: 0;">Aidan Alaniz</h2>
     <p><strong>Junior</strong> · Alabama School of Cyber Technology and Engineering (ASCTE)</p>
-    <p>I'm a student, athlete, and builder. I care about doing things well — whether that's writing clean code, shooting a consistent archery round, or leading a team. I'm always looking for ways to grow and take on new challenges.</p>
+    <p>I'm a student, athlete, and maker. I care about doing things well — whether that's competing nationally in archery, pushing my pace in cross country, or building something from scratch in code or wood.</p>
   </div>
 </div>
 
@@ -23,9 +23,11 @@ header_type: base
 
 ## Bio
 
-I grew up with a curiosity for how things work, which eventually led me to ASCTE — a school focused on cyber technology and engineering. Here I've developed a strong foundation in programming, CAD design, 3D printing, and electronics, while also taking on leadership roles in student government and residential life.
+I grew up wanting to understand how things work — whether that's a piece of code, a physical mechanism, or the human body. That curiosity led me to ASCTE, where I've built a strong foundation in programming, CAD design, 3D printing, and electronics. But outside of the classroom, my biggest focus has always been athletics.
 
-Outside of academics, I'm a competitive athlete. I shoot archery at the national level through NASP and run cross country with the varsity team. Both sports have taught me discipline, consistency, and how to perform under pressure.
+I compete in NASP archery at the national level and run cross country with the varsity team at ASCTE. I train consistently year-round and care deeply about improving — both as an athlete and as a person. My goal is to study kinesiology in college and become a physical therapist. I want to understand the how and why behind human movement and exercise — how the body adapts, recovers, and performs — and use that knowledge to work directly with athletes, helping them get back to full strength and perform at their best.
+
+Programming and engineering are things I genuinely enjoy on the side. I like building things — games, tools, hardware projects — and I'll keep doing that whether or not it's part of my career. ASCTE has given me a unique mix of technical skills that most people pursuing kinesiology won't have, and I think that combination will set me apart.
 
 ---
 
@@ -61,10 +63,12 @@ Outside of academics, I'm a competitive athlete. I shoot archery at the national
 
 ## Goals
 
-- Earn a degree in Computer Science or Engineering
+- Earn a degree in Kinesiology and become a licensed physical therapist
+- Understand the biomechanics and physiology behind human performance and recovery
+- Work with athletes in a clinical or sports performance setting
 - Continue competing in archery at a high level through college
-- Build real-world software projects that solve meaningful problems
-- Develop deeper expertise in cybersecurity and systems engineering
+- Keep building software and hardware projects on the side — programming is something I greatly enjoy and want to maintain
+- Use the technical background I've built at ASCTE to bring a different perspective to healthcare and sports medicine
 
 ---
 

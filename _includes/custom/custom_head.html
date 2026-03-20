@@ -1,3 +1,17 @@
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<script src="/assets/js/scroll-animate.js"></script>
+
+<!-- Open Graph / social preview -->
+<meta property="og:site_name" content="Aidan Alaniz">
+<meta property="og:title" content="{{ page.title | default: 'Portfolio' }} | Aidan Alaniz">
+<meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+<meta property="og:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | default: 'Portfolio' }} | Aidan Alaniz">
+<meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+<meta name="twitter:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
+
 <style>
   /* Hide header anchor permalink icons */
   .header-link {
@@ -12,7 +26,6 @@
     color: #ffffff !important;
     text-decoration: none !important;
   }
-
   .hero-chulapa .chulapa-subtitle a:hover,
   .hero-chulapa .p-summary a:hover {
     color: #ffffff !important;
@@ -22,5 +35,57 @@
   /* Inject navbar brand name */
   .navbar-brand::after {
     content: "Aidan Alaniz";
+  }
+
+  /* Smooth navbar link hover transitions */
+  .navbar-nav .nav-link {
+    transition: color 0.2s ease, opacity 0.2s ease !important;
+  }
+  .navbar-nav .nav-link:hover {
+    opacity: 0.75 !important;
+  }
+
+  /* Active nav link highlight — bold white */
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-item.active > .nav-link,
+  .navbar-nav .nav-link.font-weight-bold {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+
+  /* Consistent horizontal rules — exclude hero divider */
+  main hr, article hr {
+    border: none !important;
+    border-top: 1px solid #2a3a44 !important;
+    margin: 2rem 0 !important;
+    opacity: 1 !important;
+  }
+
+  /* Stat card hover effect */
+  a[style*="background: #1c2d36"],
+  a[style*="background:#1c2d36"] {
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  }
+  a[style*="background: #1c2d36"]:hover,
+  a[style*="background:#1c2d36"]:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3) !important;
+  }
+
+  /* Initial hidden state for animated elements — set before paint so no flash.
+     Matches the selectors in assets/js/scroll-animate.js.
+     Add new element types here AND in the JS selectors array if needed. */
+  main article h2,
+  main article h3,
+  main article p,
+  main article ul,
+  main article ol,
+  main article table,
+  main article hr,
+  main aside,
+  header.header-chulapa,
+  footer {
+    opacity: 0;
+    transform: translateY(12px);
   }
 </style>

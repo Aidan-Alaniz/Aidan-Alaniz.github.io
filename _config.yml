@@ -1,9 +1,11 @@
 remote_theme: dieghernan/chulapa
+repository: Aidan-Alaniz/Aidan-Alaniz.github.io
 
 title: Aidan Alaniz
+title_separator: " | "
 subtitle: "Student @ ASCTE"
 description: >-
-  Student portfolio featuring projects, engineering, and software development.
+  Portfolio of Aidan Alaniz — student, athlete, and maker at ASCTE.
 email: aidandalaniz@gmail.com
 github_username: Aidan-Alaniz
 url: "https://Aidan-Alaniz.github.io"
@@ -25,7 +27,7 @@ chulapa-skin:
 author:
   name: "Aidan Alaniz"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Junior at ASCTE passionate about programming, engineering, and leadership."
+  bio: "Junior at ASCTE. Athlete, maker, and aspiring physical therapist."
   location: "Huntsville, AL"
   links:
     - label: "Email"
@@ -45,20 +47,19 @@ navbar:
     - title: "Home"
       url: "/"
     - title: "About"
-      url: "/about/"
+      child:
+        - title: "About Me"
+          url: "/about/"
+        - title: "Certifications"
+          url: "/certifications/"
     - title: "Projects"
       url: "/projects/"
-    - title: "Blog"
-      url: "/blog/"
     - title: "Resume"
       child:
         - title: "Academic"
           url: "/academic-resume/"
         - title: "Athletic"
           url: "/athletic-resume/"
-
-header:
-  type: "base"
 
 # Plugins
 plugins:
@@ -98,15 +99,9 @@ defaults:
       author_profile: true
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: "default"
-      author_profile: true
-      header_type: "post"
-  - scope:
-      path: ""
       type: projects
     values:
       layout: "default"
       author_profile: true
       header_type: "base"
+      back_to_projects: true

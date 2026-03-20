@@ -1,4 +1,4 @@
 ---
-permalink: /old-index-redirect/
+published: false
 sitemap: false
 ---

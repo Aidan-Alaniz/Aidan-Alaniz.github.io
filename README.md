@@ -1,34 +1,14 @@
 # Personal Website
 
-This is the source code for my personal website, forked from [https://Jordan-Alaniz.github.io/](https://Jordan-Alaniz.github.io/) with permission, and built with Jekyll and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, hosted on GitHub Pages.
-
-Full disclosure: I'm a busy high school student, and used GitHub Copilot to help design the structure and set up my website, but all of the content you see is original and mine! My website is still a work in progress, and I add to it whenever I can, so please excuse parts that may not be complete or long pauses in between contributions. Enjoy!
+This is the source code for my personal website, forked from [https://Jordan-Alaniz.github.io/](https://Jordan-Alaniz.github.io/) with permission, and built with Jekyll and the [Chulapa](https://dieghernan.github.io/chulapa/) theme, hosted on GitHub Pages.
+)
+Full disclosure: I'm a busy high school student, and used GitHub Copilot and Claude AI to help design the structure and set up my website, but all of the content you see is original and mine! My website is still a work in progress, and I add to it whenever I can, so please excuse parts that may not be complete or long pauses in between contributions. Enjoy!
 
 Check it out live here: [https://Aidan-Alaniz.github.io/](https://Aidan-Alaniz.github.io/)
 
 ---
 
 ## How to Add Content
-
-### Adding a Blog Post
-
-1. Create a new file in the `_posts/` directory.
-2. Name it using the format: `YYYY-MM-DD-title-of-post.md`  
-   Example: `_posts/2025-03-01-my-new-post.md`
-3. Add the following front matter at the top:
-
-```yaml
----
-title: "My Post Title"
-date: 2025-03-01
-categories:
-  - Technical         # or General, Athletics, etc.
-tags:
-  - Python            # any relevant tags
----
-
-Your post content goes here in Markdown...
-```
 
 ### Adding a Project
 
