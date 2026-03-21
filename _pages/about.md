@@ -27,7 +27,7 @@ I grew up wanting to understand how things work — whether that's a piece of co
 
 I compete in NASP archery at the national level and run cross country with the varsity team at ASCTE. I train consistently year-round and care deeply about improving — both as an athlete and as a person. My goal is to study kinesiology in college and become a physical therapist. I want to understand the how and why behind human movement and exercise — how the body adapts, recovers, and performs — and use that knowledge to work directly with athletes, helping them get back to full strength and perform at their best.
 
-Programming and engineering are things I genuinely enjoy on the side. I like building things — games, tools, hardware projects — and I'll keep doing that whether or not it's part of my career. ASCTE has given me a unique mix of technical skills that most people pursuing kinesiology won't have, and I think that combination will set me apart.
+Programming and engineering are things I enjoy on the side. I like building things — games, tools, hardware projects — and I'll keep doing that whether or not it's part of my career. ASCTE has given me a unique mix of technical skills that most people pursuing kinesiology won't have. A huge proportion of the coursework is also team-based, which has built real experience collaborating across different roles and working through problems with people who have different approaches than me. I think that combination — technical background, teamwork experience, and a real passion for athletics and human performance — will set me apart.
 
 ---
 
@@ -57,7 +57,7 @@ Programming and engineering are things I genuinely enjoy on the side. I like bui
 - **Cross Country & Running** — Varsity runner, focused on pushing my personal bests each season
 - **Software Projects** — Building things for fun: games, tools, web apps
 - **Engineering & Making** — 3D printing, electronics, and hands-on problem solving
-- **Student Leadership** — SGA Representative, Residential Activities Council Subcommittee Leader
+- **Fitness & Training** — Consistent year-round training, always looking to improve performance and understand the body better
 
 ---
 
@@ -67,8 +67,8 @@ Programming and engineering are things I genuinely enjoy on the side. I like bui
 - Understand the biomechanics and physiology behind human performance and recovery
 - Work with athletes in a clinical or sports performance setting
 - Continue competing in archery at a high level through college
-- Keep building software and hardware projects on the side — programming is something I greatly enjoy and want to maintain
-- Use the technical background I've built at ASCTE to bring a different perspective to healthcare and sports medicine
+- Keep building software and hardware projects on the side — it's something I've always done and want to continue
+- Use the technical background and teamwork experience from ASCTE to bring a different perspective to healthcare and sports medicine
 
 ---
 

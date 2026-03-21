@@ -152,7 +152,7 @@ The table below reflects my recorded meet results for the current season. Full r
       <th>Meet</th>
       <th>Event</th>
       <th>Time</th>
-      <th>Place</th>
+      <th class="xc-place-col">Place</th>
     </tr>
   </thead>
   <tbody>
@@ -162,7 +162,7 @@ The table below reflects my recorded meet results for the current season. Full r
       <td>{{ r.meet }}</td>
       <td>{{ r.event }}</td>
       <td><strong>{{ r.time }}</strong></td>
-      <td>{{ r.place }}</td>
+      <td class="xc-place-col">{{ r.place }}</td>
     </tr>
     {% endfor %}
   </tbody>

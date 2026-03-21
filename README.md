@@ -1,106 +1,74 @@
-# Personal Website
+# Aidan Alaniz — Personal Portfolio
 
-This is the source code for my personal website, forked from [https://Jordan-Alaniz.github.io/](https://Jordan-Alaniz.github.io/) with permission, and built with Jekyll and the [Chulapa](https://dieghernan.github.io/chulapa/) theme, hosted on GitHub Pages.
-)
-Full disclosure: I'm a busy high school student, and used GitHub Copilot and Claude AI to help design the structure and set up my website, but all of the content you see is original and mine! My website is still a work in progress, and I add to it whenever I can, so please excuse parts that may not be complete or long pauses in between contributions. Enjoy!
+Personal portfolio site for Aidan Alaniz, built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
-Check it out live here: [https://Aidan-Alaniz.github.io/](https://Aidan-Alaniz.github.io/)
+**Live site:** [aidan-alaniz.github.io](https://aidan-alaniz.github.io)
 
 ---
 
-## How to Add Content
+## About
 
-### Adding a Project
+I'm a junior at the Alabama School of Cyber Technology and Engineering (ASCTE). I plan to study kinesiology and become a physical therapist, with a focus on athletic performance and recovery. Outside of that I compete nationally in NASP archery, run varsity cross country, and build software and hardware projects because I enjoy it.
 
-1. Create a new file in the `_projects/` directory.
-2. Name it with a short descriptive slug: `_projects/my-project.md`
-3. Add the following front matter at the top:
+This site serves as a portfolio of my projects, academic and athletic resumes, and certifications.
 
-```yaml
----
-title: "My Project Title"
-excerpt: "One sentence description shown on the projects grid."
-date: 2025-03-01
-tags:
-  - Python
-  - Hardware
-header:
-  teaser: /assets/images/projects/my-project-teaser.jpg   # optional thumbnail (600x400px recommended)
 ---
 
-## Overview
-...
+## Stack
 
-## Tools & Skills Used
-...
+- **Jekyll** with the [Chulapa](https://github.com/dieghernan/chulapa) theme (Wandoo skin, dark mode)
+- **GitHub Pages** for hosting
+- **Chart.js** for archery and XC data visualizations
+- Custom CSS and JavaScript for animations, tag filtering, and interactive elements
+- Data-driven pages via `_data/athletics.yml` for archery and cross country stats
 
-## What I Learned
-...
-```
-
-4. (Optional) Add a teaser image at `assets/images/projects/my-project-teaser.jpg` — a 600×400px image works well.
-
-### Updating Your Resume
-
-- **Academic Resume:** Edit `_pages/resume.md`
-- **Athletic Resume:** Edit `_pages/athletic-resume.md`
-- **PDF Download:** Replace `assets/files/Jordan_Alaniz_Resume.pdf` with your updated PDF.
-
-### Adding Dynamic Visual Content (Markdown Only)
-
-You can add richer visual components to any page just by editing its `.md` file — no HTML required.
-
-#### Feature Rows (cards with buttons)
-
-Add a `feature_row` block to any page's front matter, then call `{% include feature_row %}` in the body:
-
-```yaml
----
-feature_row:
-  - title: "Section Title"
-    excerpt: "A short description of this section."
-    url: "/some-page/"
-    btn_label: "Go There"
-    btn_class: "btn--primary"   # or btn--inverse, btn--warning, etc.
-  - title: "Another Section"
-    excerpt: "Another description."
-    url: "/other-page/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    image_path: /assets/images/my-image.jpg   # optional thumbnail
 ---
 
-{% include feature_row %}
-```
-
-#### Notice Boxes
-
-Wrap any paragraph with a notice class for a highlighted callout:
-
-```markdown
-This is an informational note.
-{: .notice--info}
-
-This is a warning.
-{: .notice--warning}
-
-This is a success message.
-{: .notice--success}
-```
-
-Available styles: `notice`, `notice--primary`, `notice--info`, `notice--warning`, `notice--success`, `notice--danger`.
-
-### Repository Structure
+## Structure
 
 ```
-_posts/          <- Blog posts (YYYY-MM-DD-title.md)
-_projects/       <- Project writeups
-_pages/          <- Static pages (resume, about, blog index, etc.)
-assets/
-  files/         <- Downloadable files (PDF resume, etc.)
-  images/
-    projects/    <- Project teaser images
+_config.yml          # Site config, theme, navbar, author info
 _data/
-  navigation.yml <- Site navigation links
-_config.yml      <- Site-wide settings
+  athletics.yml      # All archery tournament and XC race data
+_pages/              # Main site pages (about, resumes, certifications, etc.)
+_projects/           # Individual project pages
+assets/
+  css/custom.css     # Placeholder — all styles live in custom_head.html
+  js/                # Chart and animation scripts
+  images/            # Favicon and profile photo
+_includes/
+  custom/
+    custom_head.html # All custom CSS, Open Graph tags, animation setup
+  footer.html        # Custom footer
 ```
+
+---
+
+## Adding Content
+
+**New project:** Create a new `.md` file in `_projects/` with the standard front matter. Tags are picked up automatically by the filter on the projects page — no other changes needed.
+
+**New archery tournament:** Add an entry to `_data/athletics.yml` under `archery.tournaments`. The chart and tournament table on the athletic resume update automatically.
+
+**New XC race:** Add an entry to `_data/athletics.yml` under `cross_country.results`. Update `xc-chart.js` to add the data point — see comments in that file for instructions.
+
+**Profile photo:** Add a file named `bio-photo.jpg` to `assets/images/`. It will appear on the About page, sidebar, and social previews automatically.
+
+---
+
+## Running Locally
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Site runs at `http://localhost:4000`.
+
+---
+
+## Notes
+
+- All custom styles are in `_includes/custom/custom_head.html` — not in `assets/css/custom.css`
+- Scroll animations are handled by `assets/js/scroll-animate.js` — new standard markdown content animates automatically
+- Built with assistance from [Claude AI](https://claude.ai) (Anthropic)

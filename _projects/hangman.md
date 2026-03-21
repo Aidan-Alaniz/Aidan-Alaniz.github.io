@@ -1,10 +1,11 @@
 ---
 title: "Hangman"
-excerpt: "A text-based Hangman game built in Python."
+excerpt: "A terminal Hangman game in Python featuring colored output, a dynamically scaling gallows display, OOP architecture, and full game loop management."
 date: 2024-01-01
 tags:
   - Python
   - Personal
+  - OOP
 ---
 
 <a href="/projects/" style="display:inline-block;margin-bottom:1.5rem;background:transparent;border:1px solid #FF304F;color:#FF304F;padding:0.4rem 1rem;border-radius:4px;text-decoration:none;font-size:0.9rem;">← Back to Projects</a>
@@ -26,7 +27,7 @@ A classic Hangman game playable in the terminal, written in Python. The player g
 
 ## What I Learned
 
-A straightforward project that helped me get comfortable with string operations and managing program state. Good practice for thinking about how user input maps to game outcomes.
+This project taught me more than I expected for something simple. On the technical side I got solid practice with string manipulation, game loop management, and output formatting — including colored text and display elements that scale dynamically based on word length (the gallows drawing grows as wrong guesses accumulate). I also applied basic OOP principles to keep the display logic separate from the game logic. It was a good lesson in how much care goes into making a terminal program feel polished rather than just functional.
 
 ## Source
 

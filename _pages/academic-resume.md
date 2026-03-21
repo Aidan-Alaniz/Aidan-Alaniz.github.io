@@ -13,7 +13,7 @@ header_type: base
 
 ## SUMMARY
 
-Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong foundation in programming, engineering, and leadership. Skilled in Python, Java, HTML, and CAD, with hands-on experience in 3D printing, microcontroller work, and virtual machines. Actively involved in extracurriculars and student leadership.
+Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong foundation in programming, engineering, and team-based project work. Intending to study kinesiology and pursue a career in physical therapy, with a focus on athletic performance and recovery. Skilled in Python, Java, and CAD, with hands-on experience in hardware fabrication, microcontrollers, and systems engineering. Competitive nationally in NASP archery and varsity cross country athlete.
 
 ---
 
@@ -22,7 +22,12 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 **Alabama School of Cyber Technology and Engineering (ASCTE)**  
 *GPA: 4.16*
 
-**AP Courses**
+**AP Courses — Completed**
+- AP Computer Science Principles
+- AP Computer Science A
+- AP Language and Composition
+
+**AP Courses — Current**
 - AP Calculus
 
 **Electives**
@@ -37,54 +42,51 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 *Total Service Hours (to date): 45*
 
 **Local Pine Mountain Community Road Cleanup** · *2025*
-- Assisted in cleaning up and removing trash from local roads as part of a community event.
+- Participated in an organized community cleanup of local roads, coordinating with other volunteers to cover assigned sections and properly dispose of collected waste.
 
 **Paralympic Time Trial Volunteer** · *2025*
-- Assisted in directing participants throughout the course.
+- Directed participants along the course route, ensured athlete safety at assigned positions, and communicated course conditions to event staff throughout the event.
 
 **Residential Activities Council** · *2024–Present*
-- Active member of ASCTE's Residential Council, in charge of planning and organizing weekend activities year-round.
+- Plan, organize, and run weekend activities for ASCTE's residential student body. Currently leading a subcommittee responsible for House Events — pitching ideas, coordinating logistics, and executing events on campus.
 
 **ASCTE Halloween Trunk-or-Treat** · *2024*
-- Helped run multiple booths for ASCTE's hosted trunk-or-treat activity.
+- Designed and ran multiple themed activity booths for ASCTE's campus trunk-or-treat, managing setup, materials, and participant flow throughout the event.
 
 **ASCTE School Wide Cleanup** · *2024*
-- Helped clean up the school through Beta Club.
+- Organized and participated in a school-wide campus cleanup through Beta Club, coordinating with other members to cover assigned areas efficiently.
 
 ---
 
 ## PROJECTS
 
-**BioDesign Project** · *301/401*
-- Designed an organism to break down plastic in the ocean at a cellular level.
+**Wireless Weather Station** · *401 — In Progress*
+- Serving as Software Lead and Requirements Manager on a 9-person engineering team building a solar-powered wireless weather station for Auburn University. Responsible for Pico W firmware, MQTT encrypted data transmission, and the locally hosted data website on a Raspberry Pi 5.
+
+**Fusion 360 Trebuchet** · *401*
+- Served as Communications Lead in a structured team engineering project, coordinating between the Arm and Frame design groups to ensure compatible specifications. Team won four class awards including longest launch (87.5ft with counterweight) and highest average range (80.8ft vs 81.6ft predicted).
+
+**BioDesign — Plastic-Degrading Cell** · *301/401*
+- Designed and presented a custom engineered microorganism to break down ocean plastic. Evaluated three candidate designs using a structured scoring matrix, sourced biological components from the iGEM Parts Registry, and presented the final design to the class.
 
 **Banterbird** · *301/401*
-- Created a web app based off Twitter while implementing Python backends with APIs.
+- Built a full-stack Twitter-inspired web application in Python, implementing a REST-style backend, external API integration, user post creation, and a dynamic feed — first project requiring both front-end and server-side development simultaneously.
 
-**White Paper** · *201/101*
-- Wrote a white paper on the negative effects of modern-day shoes.
-
-**Blackjack** · *Personal*
-- Created a text-based Blackjack game with customization options in Python.
-
-**Pong** · *Personal*
-- Using a Raspberry Pi and a Sense Hat, created a Pong game using Python.
-
-**Hangman** · *Personal*
-- Created a text-based Hangman game in Python.
+**White Paper — Effects of Modern Footwear** · *201/101*
+- Researched and wrote a formal white paper arguing that modern shoe design negatively impacts biomechanics and foot health, drawing on peer-reviewed literature from ACSM and NCBI. Directly relevant to my intended kinesiology and physical therapy career path.
 
 ---
 
 ## LEADERSHIP
 
-**CAP Cadet Program – Senior Master Sergeant** · *Springville Cadet Squadron*
-- Actively contributed to the program for several years, demonstrating leadership and responsibility.
-
 **Junior SGA Team Representative** · *ASCTE*
-- Current member of Student Government, representing my class's voice in meetings and aiding in large event planning and setup.
+- Represent my class in Student Government meetings, contributing to school-wide decisions and assisting in the planning and execution of large campus events.
 
 **Residential Life Activities Council Subcommittee Leader** · *ASCTE*
-- Responsible for planning and running weekend activities on campus for the second year. Currently overseeing a subcommittee running House Events.
+- Plan and run weekend activities for ASCTE's residential student body for the second consecutive year. Currently leading a subcommittee responsible for House Events, managing a team to pitch, organize, and execute on-campus programming.
+
+**CAP Cadet Program – Senior Master Sergeant** · *Springville Cadet Squadron*
+- Served as an element leader within the Civil Air Patrol cadet program, responsible for a small group of cadets. Developed military bearing, uniform standards, and professional presentation through the program.
 
 ---
 
@@ -97,16 +99,16 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 - CAD Design
 - Excel
 - Soldering and Circuitry
-- Woodworking
+- Hardware Fabrication
 - 3D Printing
 
 ---
 
-## AWARDS
+## AWARDS & HONORS
 
 - President's List (3×)
-- Mu Alpha Theta Member
-- Beta Club Member
+- Mu Alpha Theta — Mathematics Honor Society
+- Beta Club — Academic Honor Society
 
 ---
 
@@ -117,6 +119,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 - SGA Team Representative
 - Residential Activities Council Subcommittee Leader
 - Junior Fire Academy
+- Civil Air Patrol — completed multiple supervised flights in actual aircraft through the CAP cadet flight program
 
 ---
 

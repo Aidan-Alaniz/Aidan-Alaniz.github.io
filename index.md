@@ -3,12 +3,12 @@ layout: default
 permalink: /
 author_profile: true
 header_type: "hero"
-subtitle: 'Junior at ASCTE &bull; <a href="https://www.linkedin.com/in/aidan-alaniz/" target="_blank" rel="noopener">LinkedIn</a> &bull; <a href="https://github.com/Aidan-Alaniz" target="_blank" rel="noopener">GitHub</a>'
+subtitle: '<a href="https://www.ascte.org" target="_blank" rel="noopener">Junior at ASCTE</a> &bull; <a href="https://www.linkedin.com/in/aidan-alaniz/" target="_blank" rel="noopener">LinkedIn</a> &bull; <a href="https://github.com/Aidan-Alaniz" target="_blank" rel="noopener">GitHub</a>'
 ---
 
 ## About Me
 
-I'm a junior at ASCTE with a passion for athletics, engineering, and building things. I compete nationally in archery and run varsity cross country, and I'm planning to study kinesiology and become a physical therapist. On the side, I build software and hardware projects because I genuinely enjoy it — and the technical skills I've picked up at ASCTE give me a perspective most people in healthcare won't have.
+I'm a junior at ASCTE with a passion for athletics, engineering, and building things. I compete nationally in archery and run varsity cross country, and I'm planning to study kinesiology and become a physical therapist. On the side, I build software and hardware projects because it's something I've always enjoyed — and the technical skills I've picked up at ASCTE give me a perspective most people in healthcare won't have.
 
 [Learn more about me →](/about/)
 
@@ -41,7 +41,7 @@ I'm a junior at ASCTE with a passion for athletics, engineering, and building th
   </div>
 
   <!-- Divider -->
-  <div style="width: 1px; background: #2a3a44; align-self: stretch;"></div>
+  <div id="stats-divider" style="width: 1px; background: #2a3a44; align-self: stretch;"></div>
 
   <!-- Non-sports stats -->
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; flex: 1; min-width: 280px;">
@@ -70,7 +70,7 @@ I'm a junior at ASCTE with a passion for athletics, engineering, and building th
 
 ## Athletics
 
-I compete in two sports at a high level — NASP archery nationally and cross country at the varsity level for ASCTE. Archery has been my stronger focus lately, with a career average of 266.56 and a high score of 284, placing competitively at regionals, state, and nationals.
+I compete in two sports — NASP archery nationally and cross country at the varsity level for ASCTE. In archery I have a career average of 266.56 and a high score of 284, with results at regionals, state, and nationals including a 3rd place team finish at the Alabama State Championship. In cross country I have a road 5K PR of 22:38 and am working to improve each season.
 
 [View Athletic Resume →](/athletic-resume/)
 

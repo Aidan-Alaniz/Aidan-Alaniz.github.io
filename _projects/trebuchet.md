@@ -1,6 +1,6 @@
 ---
 title: "Fusion 360 Trebuchet"
-excerpt: "Designed, built, and tested a full-scale functional trebuchet as part of a team engineering project at ASCTE, using Fusion 360 for CAD modeling and real-world fabrication."
+excerpt: "Served as Communications Lead on a structured team engineering project at ASCTE, coordinating arm and frame design groups to build a full-scale trebuchet — won four class awards including longest launch and highest average range."
 date: 2025-12-01
 tags:
   - CAD
@@ -13,67 +13,110 @@ tags:
 
 ## Overview
 
-As part of the ASCTE 401 Engineering Lifecycle curriculum, our team designed, built, and tested a full-scale trebuchet capable of launching a football using a 30lb counterweight. The project was structured to simulate a real-world engineering environment — three subgroups handled the arm, the frame, and communications/documentation respectively, and the arm and frame groups were not allowed to communicate directly. All coordination had to go through the communications group, mirroring how large engineering teams operate across departments.
+As part of the ASCTE 401 Engineering Lifecycle curriculum, our class designed, built, and tested a full-scale trebuchet capable of launching a football using a 30lb counterweight. The project ran from December 2025 through January 2026 and was deliberately structured to simulate a real-world engineering environment: three independent subgroups — Arm, Frame, and Communications — worked in parallel, with the Arm and Frame groups forbidden from communicating directly with each other.
+
+**I was part of the Communications group**, responsible for facilitating all information exchange between the Arm and Frame teams, merging their separate requirements and statements of work into unified project documents, and ensuring the two groups' designs would actually be compatible before anything was built.
+
+---
+
+## My Role — Communications
+
+The communications group's job was to make the project work as a whole, not just as two separate pieces. In practice this meant:
+
+- Collecting requirements from both the Arm and Frame groups and merging them into a single unified requirements list
+- Writing a merged Statement of Work that captured the goals, schedule, and responsibilities of the full project
+- Coordinating the material allocation between groups so nothing was double-counted and both teams had what they needed
+- Making sure the pivot point specs from the Frame group matched what the Arm group was designing around — the interface between the two was the most critical dependency
+- Handling all project documentation and reporting throughout the build
+
+This mirrors how engineering teams actually work in large organizations — the people building two subsystems often can't talk directly, and someone has to manage the interface. Getting that interface wrong meant the arm wouldn't fit the frame.
 
 ---
 
 ## Project Requirements
 
-The trebuchet had to meet the following requirements:
+Requirements were developed independently by both groups, then merged by communications:
 
-- Be moveable
-- Include a locking mechanism to prevent premature firing
-- Support a 30lb counterweight on one end of the arm
-- Successfully launch a football from the other end
-- Have the arm and frame connect as designed
-- Support the weight of the arm without the frame collapsing
-- Not suffer any structural failure during launch
-- Be composed only of the allotted materials
-- Be manually operable without external tools
-- Have a smooth, non-interfering pivot connection point
+- The trebuchet shall be moveable
+- The arm shall lock in a fixed position, preventing premature firing
+- The arm shall support a 30lb counterweight at one end
+- The arm shall successfully launch a football from the other end
+- The arm and frame shall connect as designed
+- The frame shall support the arm without collapsing
+- Neither the arm nor frame shall suffer structural failure
+- Only the allotted materials shall be used — no electronics
+- The trebuchet shall be manually operable without external tools
+- The pivot connection point shall operate smoothly without interfering with the system
 
 ---
 
-## Design
+## Design & Simulation
 
-The final design was CAD modeled in Fusion 360 before any materials were cut. We chose a wide, stable A-frame base to nearly eliminate the risk of tipping, while still leaving enough clearance for the arm and counterweight to swing through a full arc without hitting the frame.
+Before any wood was cut, we used the [Virtual Trebuchet simulator](https://virtualtrebuchet.com/?lengthArmShort=1.75&lengthArmLong=4.75&lengthSling=3.58&lengthWeight=1.75&heightOfPivot=4.5&massArm=8.2&inertiaArm=28.87&pivotToArmCG=1.5&massWeight=30&inertiaWeight=1.7&massProjectile=0.875&projectileDiameter=0.249&windSpeed=0&releaseAngle=45&units=englishf&projectile=custom&uniformArm=true&distance=24.88663994275498){:target="_blank"} to model the design and predict performance. The simulation predicted a maximum range of **≈82ft** and a maximum height of **≈31ft**.
 
-The arm group designed the throwing arm independently, coordinating only through the communications group to ensure compatibility with the frame's pivot point dimensions.
+The arm was specified at **6.75ft** with the pivot point **4ft off the ground**. Both groups CAD-modeled their components in Fusion 360, with communications ensuring the models were compatible at the interface before either group began fabrication.
+
+### Stress Analysis
+
+The communications group also ran a stress analysis on the trebuchet's STL file using finite element analysis code. We researched material properties for pine wood (Young's modulus: 7–16 GPa, Poisson's ratio: 0.12–0.49) and used values of **ym = 10 GPa** and **pr = 0.33** as representative estimates. The 30lb counterweight was converted to Newtons (133.447N) and applied to face F6 of the model to simulate the load.
+
+---
+
+## Materials
+
+| Group | Materials |
+|-------|-----------|
+| **Arm** | 1× 2"×4"×8' lumber, 30lb counterweight, canvas, rope (20'), chain, eye hooks (×3), wood screws, nails |
+| **Frame** | 5× 2"×4"×8' lumber, steel pipe (½" dia., 18"), pipe caps (×2), pipe hangers (×4), U-bolts (×4), hex nuts (×8), eye hooks (×2), gate hook and eye, wood screws, nails |
 
 ---
 
 ## Build Process
 
-**Arm:** After CAD modeling, we measured and cut the arm to length, then drilled holes for the chain attachment and the pivot axis. The initial tolerances on the axis hole were too tight and had to be sanded out to fit the metal rod. Once the frame was complete, the arm was mounted and a release mechanism and ball bag were added to the launch end.
+**Arm:** After CAD modeling and verifying compatibility with the frame through the communications group, the arm team cut the lumber to length, drilled holes for the chain attachment and pivot axis, and sanded out the pivot hole tolerances which were initially too tight for the steel rod. Once the frame was complete, the arm was mounted and a release mechanism and canvas ball bag were added to the launch end.
 
-**Frame:** The physical build differed slightly from the CAD model — the frame was built narrower than modeled to reduce material use and fit the metal rod properly. The triangle cross-pieces were cut at 45-degree angles to reduce the number of nails needed, and extra corner pieces were reused from offcuts to add internal stability. The main challenge was aligning the pivot holes on both sides of the frame precisely — adjustments had to be made in the shop, but the final fit worked cleanly.
+**Frame:** The physical build added features not present in the CAD model. The triangle cross-pieces were cut at 45-degree angles — both to reduce the number of nails needed and to keep the wood as thick as possible at the joint, preventing splitting under load. Leftover corner triangles were reused as internal bracing for additional stability. The main challenge was aligning the pivot holes on both sides of the frame to accept the steel rod — adjustments had to be made in the shop but the final fit worked cleanly.
 
 ---
 
 ## Testing & Results
 
-The trebuchet was tested three times. All three launches successfully fired the football forward and the structure remained standing with no damage.
+The trebuchet was launched five times. Our average range of **80.8ft** was very close to the simulated prediction of **81.6ft**. Launch 5 used additional human weight on the arm and reached **143ft**.
 
-| Trial | Launched Football | Structure Intact |
-|-------|-------------------|-----------------|
-| 1 | Yes | Yes |
-| 2 | Yes | Yes |
-| 3 | Yes | Yes |
+| Launch | Predicted | Actual |
+|--------|-----------|--------|
+| 1 | 81.6 ft | 55.5 ft |
+| 2 | 81.6 ft | 62 ft |
+| 3 | 81.6 ft | 56 ft |
+| 4 | 81.6 ft | 87.5 ft |
+| 5 | 81.6 ft | 143 ft *(human weight on arm)* |
+| **Average** | **81.6 ft** | **80.8 ft** |
 
-All requirements passed.
+---
+
+## Awards
+
+Our trebuchet won four class awards out of all competing teams:
+
+- 🏆 **Longest launch with human weight** — 143ft
+- 🏆 **Longest launch with counterweight** — 87.5ft
+- 🏆 **Highest average range** — 80.8ft
+- 🏆 **Used the least amount of wood**
 
 ---
 
 ## Cybersecurity Considerations
 
-Because this was an ASCTE engineering project, we were also required to think through cybersecurity implications. Our CAD files were stored in Fusion 360 — a cloud-based platform — which introduced digital vulnerabilities:
+As an ASCTE engineering project, we were also required to analyze cybersecurity implications. Our CAD files were stored in Fusion 360 — a cloud platform — which introduced digital vulnerabilities:
 
-- **Confidentiality** — We used strong passwords and enabled two-factor authentication on all design software accounts to prevent unauthorized access to our designs
-- **Integrity** — Physical copies of all measurements were kept locally so that any online tampering could be detected and corrected
-- **Availability** — All design files were backed up locally to ensure access even if the cloud platform was unavailable
+- **Confidentiality** — Strong passwords and two-factor authentication on all design software accounts
+- **Integrity** — Physical copies of all measurements kept locally so online tampering could be detected
+- **Availability** — All design files backed up locally in case the cloud version was lost or destroyed
 
 ---
 
 ## What I Learned
 
-Working on only one part of the system — the arm — while the frame was being built separately taught me how critical interface design is. The tolerances on the pivot point had to be right, and because we couldn't talk directly to the frame group, any mismatch meant going back through the communications group and losing time. It gave me a real appreciation for how much engineering work happens at the boundaries between subsystems, not just within them.
+Working in the communications group gave me a different perspective on engineering than most of my teammates had. While the Arm and Frame groups were heads-down building their subsystems, I was thinking about the whole system — how the two pieces would fit together, what information each group needed from the other, and what would happen if they made incompatible assumptions. The pivot point was the clearest example: if the arm group drilled their hole at a different diameter than what the frame group sized their rod mount for, nothing would work. That dependency had to be managed explicitly, and that was our job.
+
+It also taught me how much of a large engineering project is documentation and communication rather than fabrication. Writing a merged requirements list and a merged SoW that both groups agreed on was harder than it sounds — each group had slightly different language and priorities, and reconciling them into something coherent took real work.

@@ -9,15 +9,36 @@ header_type: base
 
 A collection of my technical and engineering projects — from school assignments to personal builds.
 
-<div id="tagFilters" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0;">
-  <button onclick="filterTag('all', this)" class="tag-btn" style="background: #FF304F; color: #fff; border: 1px solid #FF304F; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">All</button>
-  <button onclick="filterTag('Python', this)" class="tag-btn" style="background: transparent; color: #d8e4ea; border: 1px solid #2a3a44; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Python</button>
-  <button onclick="filterTag('Hardware', this)" class="tag-btn" style="background: transparent; color: #d8e4ea; border: 1px solid #2a3a44; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Hardware</button>
-  <button onclick="filterTag('Web Development', this)" class="tag-btn" style="background: transparent; color: #d8e4ea; border: 1px solid #2a3a44; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Web</button>
-  <button onclick="filterTag('School', this)" class="tag-btn" style="background: transparent; color: #d8e4ea; border: 1px solid #2a3a44; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">School</button>
-  <button onclick="filterTag('Personal', this)" class="tag-btn" style="background: transparent; color: #d8e4ea; border: 1px solid #2a3a44; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Personal</button>
-  <button onclick="filterTag('In Progress', this)" class="tag-btn" style="background: transparent; color: #d8e4ea; border: 1px solid #2a3a44; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">In Progress</button>
+<!-- Tag filter buttons — automatically generated from all project tags -->
+<div id="tagFilters" style="position: relative; margin: 1.5rem 0;">
+  <div id="tagFilterInner" style="display: flex; flex-wrap: wrap; gap: 0.5rem; max-height: 76px; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.2,0,0,1); padding: 3px;">
+    <button onclick="filterTag('all', this)" class="tag-btn" style="background: #FF304F; color: #fff; border: 1px solid #FF304F; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">All</button>
+    {% assign all_tags = site.projects | map: "tags" | join: "," | split: "," | uniq | sort %}
+    {% for tag in all_tags %}
+      {% assign tag = tag | strip %}
+      {% if tag != "" %}
+    <button onclick="filterTag('{{ tag }}', this)" class="tag-btn" style="background: transparent; color: #d8e4ea; border: 1px solid #2a3a44; padding: 0.3rem 0.9rem; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">{{ tag }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <button id="tagToggle" onclick="toggleTags()" style="margin-top: 0.5rem; background: transparent; border: none; color: #888; font-size: 0.8rem; cursor: pointer; padding: 0;">Show more tags ▾</button>
 </div>
+
+<script>
+function toggleTags() {
+  var inner = document.getElementById('tagFilterInner');
+  var btn = document.getElementById('tagToggle');
+  var isCollapsed = inner.style.maxHeight === '72px';
+  inner.style.maxHeight = isCollapsed ? inner.scrollHeight + 'px' : '72px';
+  btn.textContent = isCollapsed ? 'Show fewer tags ▴' : 'Show more tags ▾';
+}
+// Hide toggle button if all tags fit within two lines
+document.addEventListener('DOMContentLoaded', function() {
+  var inner = document.getElementById('tagFilterInner');
+  var btn = document.getElementById('tagToggle');
+  if (inner.scrollHeight <= 72) btn.style.display = 'none';
+});
+</script>
 
 ---
 

@@ -72,6 +72,20 @@
     box-shadow: 0 6px 16px rgba(0,0,0,0.3) !important;
   }
 
+  /* Mobile: hide stats divider bar */
+  @media (max-width: 576px) {
+    #stats-divider {
+      display: none !important;
+    }
+  }
+
+  /* Mobile: hide placement column on XC meet results table */
+  @media (max-width: 576px) {
+    .xc-place-col {
+      display: none !important;
+    }
+  }
+
   /* Initial hidden state for animated elements — set before paint so no flash.
      Matches the selectors in assets/js/scroll-animate.js.
      Add new element types here AND in the JS selectors array if needed. */
