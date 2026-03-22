@@ -11,13 +11,13 @@ header_type: base
 
 ---
 
-## SUMMARY
+## Summary
 
 Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong foundation in programming, engineering, and team-based project work. Intending to study kinesiology and pursue a career in physical therapy, with a focus on athletic performance and recovery. Skilled in Python, Java, and CAD, with hands-on experience in hardware fabrication, microcontrollers, and systems engineering. Competitive nationally in NASP archery and varsity cross country athlete.
 
 ---
 
-## EDUCATION
+## Education
 
 **Alabama School of Cyber Technology and Engineering (ASCTE)**  
 *GPA: 4.16*
@@ -37,7 +37,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## EXPERIENCE
+## Experience
 
 *Total Service Hours (to date): 45*
 
@@ -58,7 +58,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## PROJECTS
+## Projects
 
 **Wireless Weather Station** · *401 — In Progress*
 - Serving as Software Lead and Requirements Manager on a 9-person engineering team building a solar-powered wireless weather station for Auburn University. Responsible for Pico W firmware, MQTT encrypted data transmission, and the locally hosted data website on a Raspberry Pi 5.
@@ -77,7 +77,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## LEADERSHIP
+## Leadership
 
 **Junior SGA Team Representative** · *ASCTE*
 - Represent my class in Student Government meetings, contributing to school-wide decisions and assisting in the planning and execution of large campus events.
@@ -90,7 +90,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## KEY SKILLS
+## Key Skills
 
 - Python Programming
 - Java Programming
@@ -104,7 +104,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## AWARDS & HONORS
+## Awards & Honors
 
 - President's List (3×)
 - Mu Alpha Theta — Mathematics Honor Society
@@ -112,7 +112,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## EXTRA-CURRICULAR ACTIVITIES
+## Extra-Curricular Activities
 
 - Cross Country (Varsity)
 - National Level Archery Team
@@ -123,7 +123,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## CERTIFICATIONS
+## Certifications
 
 - Wilderness First Responder
 - Basic Life Support
@@ -133,6 +133,6 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ---
 
-## REFERENCES
+## References
 
 Available upon request.

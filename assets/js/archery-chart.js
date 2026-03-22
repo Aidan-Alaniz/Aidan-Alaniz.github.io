@@ -2,10 +2,6 @@
 // Renders the archery score progression line chart on the athletic resume page.
 // To add a new tournament: add an entry to each of the three arrays (labels, scores, names)
 // in the same position. Update 'avg' when your NASP career average changes.
-//
-// ARCHERY CHART
-// To add a tournament: add a label, score, and full name
-// in the same position in each of the three arrays below.
 
 var labels = [
   "GH Raider '25","JCHS '25","N.AL Pre-Reg '25","Eagle Eye '25","Buckhorn Reg '25",
@@ -37,38 +33,56 @@ var trendline = scores.map(function(s, i) {
   return Math.round((slope * i + intercept) * 10) / 10;
 });
 
-new Chart(document.getElementById('archeryChart'), {
-  type: 'line',
-  data: {
-    labels: labels,
-    datasets: [{
-      label: 'Score',
-      data: scores,
-      borderColor: '#FF304F',
-      backgroundColor: 'rgba(255,48,79,0.12)',
-      pointBackgroundColor: '#FF304F',
-      pointRadius: 4,
-      tension: 0.3,
-      fill: true
-    },{
-      label: 'Trend',
-      data: trendline,
-      borderColor: '#4a8fa3',
-      borderDash: [6,3],
-      pointRadius: 0,
-      fill: false,
-      tension: 0
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { labels: { color: '#d8e4ea' } },
-      tooltip: { callbacks: { title: function(ctx) { return names[ctx[0].dataIndex]; } } }
-    },
-    scales: {
-      x: { ticks: { color: '#d8e4ea', maxRotation: 45, minRotation: 30, font: { size: 11 } }, grid: { color: 'rgba(255,255,255,0.05)' } },
-      y: { min: 230, max: 295, ticks: { color: '#d8e4ea' }, grid: { color: 'rgba(255,255,255,0.05)' } }
-    }
-  }
-});
+// Delay chart creation until the canvas is scrolled into view,
+// so Chart.js's draw animation plays at the right moment.
+(function() {
+  var canvas = document.getElementById('archeryChart');
+  if (!canvas) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    if (!entries[0].isIntersecting) return;
+    observer.unobserve(canvas);
+
+    new Chart(canvas, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Score',
+          data: scores,
+          borderColor: '#FF304F',
+          backgroundColor: 'rgba(255,48,79,0.12)',
+          pointBackgroundColor: '#FF304F',
+          pointRadius: 4,
+          tension: 0.3,
+          fill: true
+        },{
+          label: 'Trend',
+          data: trendline,
+          borderColor: '#4a8fa3',
+          borderDash: [6,3],
+          pointRadius: 0,
+          fill: false,
+          tension: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 900,
+          easing: 'easeInOutQuart'
+        },
+        plugins: {
+          legend: { labels: { color: '#d8e4ea' } },
+          tooltip: { callbacks: { title: function(ctx) { return names[ctx[0].dataIndex]; } } }
+        },
+        scales: {
+          x: { ticks: { color: '#d8e4ea', maxRotation: 45, minRotation: 30, font: { size: 11 } }, grid: { color: 'rgba(255,255,255,0.05)' } },
+          y: { min: 230, max: 295, ticks: { color: '#d8e4ea' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+        }
+      }
+    });
+  }, { threshold: 0.15 });
+
+  observer.observe(canvas);
+})();

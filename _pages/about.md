@@ -5,15 +5,15 @@ layout: default
 header_type: base
 ---
 
-<div style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+<div class="about-hero">
   <img
     src="/assets/images/bio-photo.jpg"
     alt="Aidan Alaniz"
-    style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 3px solid #FF304F; flex-shrink: 0;"
-    onerror="this.src='https://via.placeholder.com/200x200?text=Aidan+Alaniz'; this.onerror=null;"
+    class="about-hero__photo"
+    onerror="this.src='https://via.placeholder.com/160x160?text=Aidan+Alaniz'; this.onerror=null;"
   />
-  <div>
-    <h2 style="margin-top: 0;">Aidan Alaniz</h2>
+  <div class="about-hero__text">
+    <h2>Aidan Alaniz</h2>
     <p><strong>Junior</strong> · Alabama School of Cyber Technology and Engineering (ASCTE)</p>
     <p>I'm a student, athlete, and maker. I care about doing things well — whether that's competing nationally in archery, pushing my pace in cross country, or building something from scratch in code or wood.</p>
   </div>

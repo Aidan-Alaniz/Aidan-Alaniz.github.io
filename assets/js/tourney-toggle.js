@@ -1,19 +1,18 @@
 // tourney-toggle.js
-// Controls the show/hide accordion on the archery tournament table on the athletic resume page.
-// No edits needed here — it reads from the HTML table automatically.
-//
-// Tournament table accordion toggle
-// extraRows is a div wrapping a table — animates open/closed smoothly
-function toggleTourneys() {
-var extra = document.getElementById('extraRows');
-var btn = document.getElementById('tourneyToggle');
-var isCollapsed = extra.style.maxHeight === '0px' || extra.style.maxHeight === '0';
+// Controls the show/hide accordion on the archery tournament table.
+// Uses a boolean flag instead of fragile maxHeight string comparisons.
+(function () {
+  'use strict';
 
-if (isCollapsed) {
-  extra.style.maxHeight = extra.scrollHeight + 'px';
-  btn.textContent = 'Show Less';
-} else {
-  extra.style.maxHeight = '0';
-  btn.textContent = 'Show All Tournaments';
-}
-}
+  var open = false;
+
+  window.toggleTourneys = function () {
+    var extra = document.getElementById('extraRows');
+    var btn   = document.getElementById('tourneyToggle');
+    var label = btn.querySelector('span') || btn;
+
+    open = !open;
+    extra.style.maxHeight = open ? extra.scrollHeight + 'px' : '0';
+    label.textContent     = open ? 'Show Less' : 'Show All Tournaments';
+  };
+}());

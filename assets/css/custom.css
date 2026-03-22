@@ -1,3 +1,6 @@
 ---
 ---
-/* This file is intentionally empty. All custom styles are in _includes/custom/custom_head.html */
+/* This file intentionally left empty.
+   All custom styles are in _includes/custom/custom_head.html
+   which is guaranteed to render. This file is kept to avoid a 404
+   on the stylesheet link that the theme emits. */

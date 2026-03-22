@@ -5,9 +5,6 @@ layout: default
 header_type: base
 ---
 
-<!-- Load Chart.js for the archery score graph -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 ## Aidan Alaniz — Athletic Resume
 
 [aidandalaniz@gmail.com](mailto:aidandalaniz@gmail.com) · [NASP Profile]({{ site.data.athletics.archery.nasp_profile }}){:target="_blank"} · [MileSplit Profile]({{ site.data.athletics.cross_country.milesplit_profile }}){:target="_blank"}
@@ -33,58 +30,54 @@ I have competed in NASP (National Archery in the Schools Program) for two season
 
 The chart below shows my score across all sanctioned tournaments, ordered chronologically. The dashed line represents my career average. Hovering over a point shows the full tournament name.
 
-<!-- Chart container — height is controlled by Chart.js automatically -->
-<div style="max-width: 700px; margin: 1.5rem 0;">
+<div class="chart-container">
   <canvas id="archeryChart"></canvas>
 </div>
-
-<script src="/assets/js/archery-chart.js"></script>
 
 ### Tournament History
 
 The table below lists all sanctioned NASP tournaments I have competed in, including my score and placement within my division. Click "Show All Tournaments" to view my full history.
 
 <!-- Tournament table — data comes from _data/athletics.yml -->
-<!-- Two tables styled as one so the accordion animation works correctly -->
-<table id="tourneyTable" style="width: 100%; margin-bottom: 0; border-bottom: none;">
+<table id="tourneyTable" class="tourney-table">
   <thead>
     <tr>
-      <th style="width: 12%; white-space: nowrap;">Date</th>
-      <th style="width: 46%">Tournament</th>
-      <th style="width: 10%">Score</th>
-      <th style="width: 16%">HS Boys Rank</th>
-      <th style="width: 16%">Grade Rank</th>
+      <th class="col-date">Date</th>
+      <th class="col-name">Tournament</th>
+      <th class="col-score">Score</th>
+      <th class="col-rank">HS Boys Rank</th>
+      <th class="col-rank">Grade Rank</th>
     </tr>
   </thead>
   <tbody>
     {% for t in site.data.athletics.archery.tournaments %}
     {% if forloop.index <= 5 %}
     <tr>
-      <td style="width: 12%; white-space: nowrap;">{{ t.date }}</td>
-      <td style="width: 46%">{{ t.name }}</td>
-      <td style="width: 10%"><strong>{{ t.score }}</strong></td>
-      <td style="width: 16%">{{ t.hs_boys_rank }}</td>
-      <td style="width: 16%">{{ t.grade_rank }}</td>
+      <td class="col-date">{{ t.date }}</td>
+      <td>{{ t.name }}</td>
+      <td><strong>{{ t.score }}</strong></td>
+      <td>{{ t.hs_boys_rank }}</td>
+      <td>{{ t.grade_rank }}</td>
     </tr>
     {% endif %}
     {% endfor %}
   </tbody>
 </table>
 <!-- Expandable section — animates open/closed -->
-<div id="extraRows" style="overflow: hidden; max-height: 0; transition: max-height 0.5s ease;">
-  <table style="width: 100%; margin-top: 0; border-top: none;">
+<div id="extraRows" class="tourney-extra">
+  <table class="tourney-table tourney-table--continuation">
     <colgroup>
-      <col style="width: 12%">
-      <col style="width: 46%">
-      <col style="width: 10%">
-      <col style="width: 16%">
-      <col style="width: 16%">
+      <col class="col-date">
+      <col class="col-name">
+      <col class="col-score">
+      <col class="col-rank">
+      <col class="col-rank">
     </colgroup>
     <tbody>
       {% for t in site.data.athletics.archery.tournaments %}
       {% if forloop.index > 5 %}
       <tr>
-        <td style="white-space: nowrap;">{{ t.date }}</td>
+        <td class="col-date">{{ t.date }}</td>
         <td>{{ t.name }}</td>
         <td><strong>{{ t.score }}</strong></td>
         <td>{{ t.hs_boys_rank }}</td>
@@ -96,28 +89,13 @@ The table below lists all sanctioned NASP tournaments I have competed in, includ
   </table>
 </div>
 
-<!-- Toggle button for showing/hiding older tournaments -->
-<button
-  id="tourneyToggle"
-  onclick="toggleTourneys()"
-  style="
-    margin-top: 0.75rem;
-    background: transparent;
-    border: 1px solid #FF304F;
-    color: #FF304F;
-    padding: 0.4rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-  ">
-  Show All Tournaments
+<button id="tourneyToggle" onclick="toggleTourneys()">
+  <span>Show All Tournaments</span>
 </button>
-
-
-<script src="/assets/js/tourney-toggle.js"></script>
 
 ---
 
-## Cross Country
+## Cross Country {#cross-country}
 
 [View MileSplit Profile →]({{ site.data.athletics.cross_country.milesplit_profile }}){:target="_blank"} &nbsp;&bull;&nbsp; [View UltraSignup Profile →]({{ site.data.athletics.cross_country.ultrasignup_profile }}){:target="_blank"}
 
@@ -127,10 +105,9 @@ I compete in cross country as a varsity runner for ASCTE, racing the standard 5K
 
 The chart below shows my 5K times across recorded races. Lower is faster — the trendline shows consistent improvement.
 
-<div style="max-width: 700px; margin: 1.5rem 0;">
+<div class="chart-container">
   <canvas id="xcChart"></canvas>
 </div>
-<script src="/assets/js/xc-chart.js"></script>
 <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;"><span style="color: #888;">&#9679;</span> Grey points = non-standard conditions — Darter Dash (trail run) &amp; Reindeer Dash (long course, hilly). Not directly comparable to standard road 5Ks.</p>
 
 ### Personal Records
@@ -145,7 +122,7 @@ The chart below shows my 5K times across recorded races. Lower is faster — the
 The table below reflects my recorded meet results for the current season. Full race history and splits are available on my MileSplit profile.
 
 <!-- XC results table — data comes from _data/athletics.yml -->
-<table style="width: 100%;">
+<table class="xc-table">
   <thead>
     <tr>
       <th>Date</th>
@@ -169,3 +146,9 @@ The table below reflects my recorded meet results for the current season. Full r
 </table>
 
 *Results updated each season — full history available on MileSplit.*
+
+<!-- All chart/toggle scripts loaded here so they never block page rendering -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+<script src="/assets/js/tourney-toggle.js" defer></script>
+<script src="/assets/js/archery-chart.js" defer></script>
+<script src="/assets/js/xc-chart.js" defer></script>

@@ -1,6 +1,6 @@
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="64dc0545-d473-47ba-bab7-375d58ab8db0"></script>
-<script src="/assets/js/scroll-animate.js"></script>
+<script defer src="/assets/js/scroll-animate.js"></script>
 
 <!-- Open Graph / social preview -->
 <meta property="og:site_name" content="Aidan Alaniz">
@@ -14,12 +14,310 @@
 <meta name="twitter:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
 
 <style>
-  /* Hide header anchor permalink icons */
-  .header-link {
-    display: none !important;
+  /* =========================================================================
+     PRE-HIDE — set before any JS runs so there is zero flash.
+     JS (scroll-animate.js) overwrites these inline once DOMContentLoaded
+     fires and IntersectionObserver takes over.
+     Project-card inner elements are excluded because the card itself
+     already animates as a unit via scroll-animate on the h3/p selectors;
+     pre-hiding each child individually caused the projects page to look
+     blank for several seconds while dozens of observers spun up.
+     ========================================================================= */
+  main article h2,
+  main article h3:not(.project-card h3),
+  main article p:not(.project-card p),
+  main article ul,
+  main article ol,
+  main article table,
+  main article hr,
+  main article canvas,
+  main article blockquote,
+  main aside,
+  footer {
+    opacity: 0;
   }
 
-  /* Hero subtitle link color override */
+  /* =========================================================================
+     ANIMATION SYSTEM — CSS layer
+     ========================================================================= */
+
+  :root {
+    --ease-out-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* ----- Keyframes ------------------------------------------------------- */
+
+  @keyframes sa-header-enter {
+    0%   { opacity: 0; transform: translateY(-18px) scaleY(0.97); }
+    100% { opacity: 1; transform: translateY(0)     scaleY(1);    }
+  }
+
+  @keyframes sa-brand-pop {
+    0%   { opacity: 0; letter-spacing: -0.04em; }
+    60%  { opacity: 1; letter-spacing:  0.02em; }
+    100% { opacity: 1; letter-spacing:  0em;    }
+  }
+
+  @keyframes sa-sidebar-enter {
+    0%   { opacity: 0; transform: translateX(-16px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+
+  /* =========================================================================
+     HEADER
+     ========================================================================= */
+  header.header-chulapa {
+    opacity: 0;
+  }
+  header.header-chulapa.sa-header-ready {
+    animation: sa-header-enter 0.85s var(--ease-out-expo) 0.05s both;
+  }
+
+  /* =========================================================================
+     NAVBAR
+     ========================================================================= */
+
+  .navbar-brand::after {
+    content: "Aidan Alaniz";
+    animation: sa-brand-pop 0.7s var(--ease-out-quart) 0.1s both;
+    display: inline-block;
+  }
+
+  /* --- Top-level links that do NOT have a dropdown ----------------------- */
+  /* Only apply underline to nav-links that are NOT dropdown-toggles        */
+  .sa-nav-link:not(.dropdown-toggle) {
+    position: relative;
+    transition: color 0.2s ease !important;
+  }
+  .sa-nav-link:not(.dropdown-toggle)::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF304F;
+    border-radius: 1px;
+    transition: width 0.28s var(--ease-out-expo);
+  }
+  .sa-nav-link:not(.dropdown-toggle):hover::after {
+    width: 100%;
+  }
+
+  /* --- Dropdown toggles — match the theme's exact specificity to override -- */
+  /* Theme rule: .navbar-chulapa .navbar-nav .nav-link:hover { color: #ffcbd3 } */
+  /* We match that 4-part specificity and use !important to guarantee a win.   */
+  .navbar-chulapa .navbar-nav .nav-link.dropdown-toggle {
+    transition: color 0.2s ease !important;
+  }
+  .navbar-chulapa .navbar-nav .nav-link.dropdown-toggle:hover,
+  .navbar-chulapa .navbar-nav .nav-link.dropdown-toggle:focus {
+    color: #ffffff !important;
+    opacity: 0.85;
+  }
+
+  /* --- Dropdown menus ---------------------------------------------------- */
+  /* Force the dropdown background dark. The theme hardcodes #FF304F here.    */
+  /* Using both the standard selector AND body prefix for maximum specificity. */
+  body .navbar-chulapa .dropdown-menu,
+  .navbar-chulapa .dropdown-menu.show {
+    background-color: #0f1c22 !important;
+    border: 1px solid #2a3a44 !important;
+    border-radius: 4px !important;
+    padding: 0.25rem 0 !important;
+    animation: sa-dropdown-enter 0.2s var(--ease-out-quart) both;
+  }
+  @keyframes sa-dropdown-enter {
+    0%   { opacity: 0; transform: translateY(-6px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  body .navbar-chulapa .dropdown-menu .dropdown-item {
+    color: #d8e4ea !important;
+    background-color: transparent !important;
+    padding: 0.45rem 1.1rem !important;
+    font-size: 0.9rem !important;
+    transition: color 0.18s ease, background-color 0.18s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  /* Left-bar accent */
+  body .navbar-chulapa .dropdown-menu .dropdown-item::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 20% !important;
+    height: 60% !important;
+    width: 0 !important;
+    background: #FF304F !important;
+    border-radius: 0 2px 2px 0 !important;
+    transition: width 0.2s var(--ease-out-expo) !important;
+  }
+  body .navbar-chulapa .dropdown-menu .dropdown-item:hover::before,
+  body .navbar-chulapa .dropdown-menu .dropdown-item:focus::before {
+    width: 3px !important;
+  }
+  body .navbar-chulapa .dropdown-menu .dropdown-item:hover,
+  body .navbar-chulapa .dropdown-menu .dropdown-item:focus,
+  body .navbar-chulapa .dropdown-menu .dropdown-item:active {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+  }
+  /* Kill the theme's red active state too */
+  body .navbar-chulapa .dropdown-menu .dropdown-item.active,
+  body .navbar-chulapa .dropdown-menu .show > .dropdown-item,
+  body .navbar-chulapa .dropdown-menu .dropdown-item.show {
+    background-color: rgba(255, 48, 79, 0.18) !important;
+    color: #ffffff !important;
+  }
+
+  /* Active nav link — bold white */
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-item.active > .nav-link,
+  .navbar-nav .nav-link.font-weight-bold {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+
+  /* =========================================================================
+     HEADINGS — red underline sweep on scroll-reveal
+     Only h2 section headings get the sweep; h3 inside project cards
+     sits too close to the card separator so it's excluded.
+     ========================================================================= */
+  main article h2 {
+    background-image: linear-gradient(90deg, #FF304F 0%, #FF304F 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    padding-bottom: 0.15em;
+    transition: background-size 0.55s var(--ease-out-expo);
+  }
+  main article h2.sa-revealed {
+    background-size: 100% 2px;
+  }
+
+  /* =========================================================================
+     HORIZONTAL RULES
+     ========================================================================= */
+  main hr, article hr {
+    border: none !important;
+    border-top: 1px solid #2a3a44 !important;
+    margin: 2rem 0 !important;
+    opacity: 1 !important;
+    transform-origin: center !important;
+  }
+
+  /* =========================================================================
+     STAT CARDS
+     ========================================================================= */
+  a[style*="background: #1c2d36"],
+  a[style*="background:#1c2d36"] {
+    transition:
+      transform   0.25s var(--ease-spring),
+      box-shadow  0.25s ease !important;
+  }
+  a[style*="background: #1c2d36"]:hover,
+  a[style*="background:#1c2d36"]:hover {
+    transform:  translateY(-5px) !important;
+    box-shadow: 0 8px 24px rgba(255, 48, 79, 0.18),
+                0 2px  8px rgba(0, 0, 0, 0.35) !important;
+  }
+
+  /* =========================================================================
+     OUTLINE ACCENT BUTTON — used for "Get in Touch" and similar CTA buttons.
+     The ::before sliding fill works here because we control the HTML.
+     ========================================================================= */
+  a.btn-outline-accent {
+    display: inline-block !important;
+    background: transparent !important;
+    border: 1px solid #FF304F !important;
+    color: #FF304F !important;
+    padding: 0.4rem 1.2rem !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    font-size: 0.9rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+    transition: color 0.25s var(--ease-out-expo) !important;
+  }
+  a.btn-outline-accent::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #FF304F;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s var(--ease-out-expo);
+    z-index: 0;
+  }
+  a.btn-outline-accent:hover::before { transform: scaleX(1); }
+  a.btn-outline-accent:hover { color: #ffffff !important; text-decoration: none !important; }
+  a.btn-outline-accent > span {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* =========================================================================
+     TOURNAMENT TOGGLE BUTTON
+     Text is a <span> inside the button so z-index stacking works correctly
+     and the slide-fill ::before doesn't get wiped by textContent changes.
+     ========================================================================= */
+  #tourneyToggle {
+    background: transparent !important;
+    border: 1px solid #FF304F !important;
+    color: #FF304F !important;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: inherit;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.25s var(--ease-out-expo) !important;
+  }
+  #tourneyToggle::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #FF304F;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s var(--ease-out-expo);
+    z-index: 0;
+  }
+  #tourneyToggle:hover::before { transform: scaleX(1); }
+  #tourneyToggle:hover { color: #ffffff !important; }
+  #tourneyToggle > span {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* =========================================================================
+     SIDEBAR
+     ========================================================================= */
+  .author__avatar,
+  .author__content,
+  .author__urls-wrapper {
+    animation: sa-sidebar-enter 0.7s var(--ease-out-expo) both;
+  }
+  .author__content      { animation-delay: 0.08s; }
+  .author__urls-wrapper { animation-delay: 0.16s; }
+
+  /* =========================================================================
+     TABLE ROWS
+     ========================================================================= */
+  main article table tbody tr {
+    transition: background-color 0.15s ease;
+  }
+  main article table tbody tr:hover {
+    background-color: rgba(255, 48, 79, 0.04);
+  }
+
+  /* =========================================================================
+     MISC
+     ========================================================================= */
+  .header-link { display: none !important; }
+
   .hero-chulapa .chulapa-subtitle a,
   .hero-chulapa .chulapa-subtitle a:visited,
   .hero-chulapa .p-summary a,
@@ -33,74 +331,290 @@
     text-decoration: underline !important;
   }
 
-  /* Inject navbar brand name */
-  .navbar-brand::after {
-    content: "Aidan Alaniz";
+  @media (max-width: 576px) {
+    #stats-divider  { display: none !important; }
+    .xc-place-col   { display: none !important; }
   }
 
-  /* Smooth navbar link hover transitions */
-  .navbar-nav .nav-link {
-    transition: color 0.2s ease, opacity 0.2s ease !important;
-  }
-  .navbar-nav .nav-link:hover {
-    opacity: 0.75 !important;
-  }
-
-  /* Active nav link highlight — bold white */
-  .navbar-nav .nav-link.active,
-  .navbar-nav .nav-item.active > .nav-link,
-  .navbar-nav .nav-link.font-weight-bold {
-    color: #ffffff !important;
-    font-weight: 700 !important;
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration:        0.01ms !important;
+      animation-iteration-count: 1      !important;
+      transition-duration:       0.01ms !important;
+    }
   }
 
-  /* Consistent horizontal rules — exclude hero divider */
-  main hr, article hr {
-    border: none !important;
-    border-top: 1px solid #2a3a44 !important;
-    margin: 2rem 0 !important;
+  /* =========================================================================
+     TYPOGRAPHY
+     ========================================================================= */
+
+  main article h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  main article h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+  }
+
+  /* Body links — underline draws left-to-right on hover */
+  main article a:not(.btn-outline-accent):not([style]) {
+    color: #FF304F;
+    text-decoration: none;
+    position: relative;
+  }
+  main article a:not(.btn-outline-accent):not([style])::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1px;
+    background: #FF304F;
+    transition: width 0.22s var(--ease-out-expo);
+  }
+  main article a:not(.btn-outline-accent):not([style]):hover {
+    color: #FF304F;
+    text-decoration: none;
+  }
+  main article a:not(.btn-outline-accent):not([style]):hover::after {
+    width: 100%;
+  }
+
+  /* =========================================================================
+     PROJECT CARDS — hover shift
+     ========================================================================= */
+
+  /* NOTE: No !important on transition here — project-filter.js sets
+     card.style.transition inline to drive the reveal animation, and
+     !important on the class rule would override those inline styles,
+     breaking the fade/slide effect when switching filters. */
+  .project-card {
+    transition: padding-left 0.25s var(--ease-out-expo),
+                border-bottom-color 0.25s ease;
+  }
+  .project-card:hover {
+    padding-left: 6px !important;
+    border-bottom-color: rgba(255, 48, 79, 0.5) !important;
+  }
+  .project-card a[style]:hover {
+    text-decoration: none !important;
+  }
+
+  /* =========================================================================
+     FOOTER
+     ========================================================================= */
+
+  .page__footer-copyright {
+    font-size: 0.75rem !important;
     opacity: 1 !important;
+    color: #4a5a64 !important;
+    border-top: 1px solid #1c2d36;
+  }
+  .page__footer-copyright a {
+    color: #5a7080 !important;
+    text-decoration: none;
+    transition: color 0.18s ease;
+  }
+  .page__footer-copyright a:hover {
+    color: #FF304F !important;
   }
 
-  /* Stat card hover effect */
-  a[style*="background: #1c2d36"],
-  a[style*="background:#1c2d36"] {
-    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
-  }
-  a[style*="background: #1c2d36"]:hover,
-  a[style*="background:#1c2d36"]:hover {
-    transform: translateY(-3px) !important;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.3) !important;
+  /* =========================================================================
+     SCROLLBAR
+     ========================================================================= */
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0f1c22; }
+  ::-webkit-scrollbar-thumb { background: #2a3a44; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #FF304F; }
+
+  /* =========================================================================
+     TEXT SELECTION
+     ========================================================================= */
+
+  ::selection {
+    background: rgba(255, 48, 79, 0.3);
+    color: #ffffff;
   }
 
-  /* Mobile: hide stats divider bar */
-  @media (max-width: 576px) {
-    #stats-divider {
-      display: none !important;
+  /* =========================================================================
+     TAG FILTER CONTAINER
+     ========================================================================= */
+
+  #tagFilters {
+    position: relative;
+    margin: 1.5rem 0;
+  }
+
+  #tagFilterInner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 3px;
+    overflow: hidden;
+    /* Large enough to never clip when expanded */
+    max-height: 600px;
+    transition: max-height 0.4s cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  #tagFilterInner.tag-filter-collapsed {
+    max-height: 76px;
+  }
+
+  #tagToggle {
+    margin-top: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  /* =========================================================================
+     TAG BUTTONS
+     ========================================================================= */
+
+  .tag-btn {
+    background: transparent;
+    color: #d8e4ea;
+    border: 1px solid #2a3a44;
+    padding: 0.3rem 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  }
+
+  .tag-btn--active,
+  .tag-btn:hover {
+    background: #FF304F;
+    color: #fff;
+    border-color: #FF304F;
+  }
+
+  /* =========================================================================
+     PROJECT CARD INNER ELEMENTS
+     (card-level hover/transition rules are already above in PROJECT CARDS)
+     ========================================================================= */
+
+  .project-card {
+    margin-bottom: 2rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #2a3a44;
+  }
+
+  .project-card h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  .project-card__tags {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  .project-tag {
+    display: inline-block;
+    background: #1c2d36;
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+
+  .project-card__excerpt {
+    margin-top: 0.75rem;
+  }
+
+  .project-card__link {
+    font-size: 0.9rem;
+  }
+
+  #noResults {
+    display: none;
+    color: #888;
+  }
+
+  /* =========================================================================
+     ABOUT PAGE HERO
+     ========================================================================= */
+
+  .about-hero {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-hero__photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #FF304F;
+    flex-shrink: 0;
+  }
+
+  .about-hero__text {
+    min-width: 0;
+  }
+
+  .about-hero__text h2 {
+    margin-top: 0;
+  }
+
+  @media (max-width: 480px) {
+    .about-hero {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
-  /* Mobile: hide placement column on XC meet results table */
-  @media (max-width: 576px) {
-    .xc-place-col {
-      display: none !important;
-    }
+  /* =========================================================================
+     CHART CONTAINERS (archery + XC)
+     ========================================================================= */
+
+  .chart-container {
+    max-width: 700px;
+    margin: 1.5rem 0;
   }
 
-  /* Initial hidden state for animated elements — set before paint so no flash.
-     Matches the selectors in assets/js/scroll-animate.js.
-     Add new element types here AND in the JS selectors array if needed. */
-  main article h2,
-  main article h3,
-  main article p,
-  main article ul,
-  main article ol,
-  main article table,
-  main article hr,
-  main aside,
-  header.header-chulapa,
-  footer {
-    opacity: 0;
-    transform: translateY(12px);
+  /* =========================================================================
+     TOURNAMENT TABLE
+     ========================================================================= */
+
+  .tourney-table {
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: none;
   }
+
+  .tourney-table--continuation {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  .tourney-extra {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+  }
+
+  .col-date  { width: 12%; white-space: nowrap; }
+  .col-name  { width: 46%; }
+  .col-score { width: 10%; }
+  .col-rank  { width: 16%; }
+
+  /* =========================================================================
+     XC RESULTS TABLE
+     ========================================================================= */
+
+  .xc-table {
+    width: 100%;
+  }
+
 </style>
