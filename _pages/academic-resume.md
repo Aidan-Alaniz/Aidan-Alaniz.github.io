@@ -60,9 +60,6 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ## Projects
 
-**Wireless Weather Station** · *401 — In Progress*
-- Serving as Software Lead and Requirements Manager on a 9-person engineering team building a solar-powered wireless weather station for Auburn University. Responsible for Pico W firmware, MQTT encrypted data transmission, and the locally hosted data website on a Raspberry Pi 5.
-
 **Fusion 360 Trebuchet** · *401*
 - Served as Communications Lead in a structured team engineering project, coordinating between the Arm and Frame design groups to ensure compatible specifications. Team won four class awards including longest launch (87.5ft with counterweight) and highest average range (80.8ft vs 81.6ft predicted).
 
