@@ -1,9 +1,15 @@
 archery:
   high_score: 284
   high_score_date: "March 1, 2025"
-  career_average: 266.56
+  career_average: 267.06
   nasp_profile: "https://nasptournaments.org/archertournamenthistory.aspx?ahid=656398&src=as"
   tournaments:
+    - date: "2026-03-26"
+      label: "Riverton Pre-St. '26"
+      name: "Riverton Pre-State Tournament"
+      score: 275
+      hs_boys_rank: "15 / 52"
+      grade_rank: "6 / 19"
     - date: "2026-03-12"
       label: "Buckhorn Reg '26"
       name: "Buckhorn Regional"
