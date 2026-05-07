@@ -1,32 +1,29 @@
 ---
 title: "Wireless Weather Station"
-excerpt: "Building a solar-powered wireless weather station that logs environmental data and hosts it on a local website — serving as Software Lead and Requirements Manager on a 9-person engineering team at ASCTE."
+excerpt: "Built a solar-powered wireless weather station that collects environmental data and hosts it on a local website — serving as Software Lead and Requirements Manager on a 9-person engineering team at ASCTE."
 date: 2026-03-19
 tags:
   - Hardware
   - Python
   - Wireless
-  - In Progress
   - School
 ---
 
 <div style="margin-bottom:1.5rem;"><a href="/projects/" class="btn-outline-accent"><span>← Back to Projects</span></a></div>
 
-> **Status: In Progress** — The Raspberry Pi 5 has been set up and configured as the base station router. Software development and sensor integration are ongoing.
-
 ## Overview
 
-This is a full-scale engineering project being developed as part of ASCTE's Engineering Lifecycle curriculum, with Auburn University as the customer. The goal is to design and build a solar-powered wireless weather station that collects environmental data via sensors, transmits it wirelessly to a base station, and hosts a secure local website where users can view live and historical readings.
+A full-scale engineering project developed as part of ASCTE's Engineering Lifecycle curriculum, with Auburn University as the customer. The goal was to design and build a solar-powered wireless weather station that collects environmental data via sensors, transmits it wirelessly to a base station, and hosts a secure local website where users can view live and historical readings.
 
-The project is being run by a 9-person team with formal engineering roles. I am serving as **Software Lead** and **Requirements Manager** — responsible for the firmware running on the sensor node, the data pipeline to the server, and maintaining the project's requirements documentation throughout the lifecycle.
+The project was run by a 9-person team with formal engineering roles. I served as **Software Lead** and **Requirements Manager** — responsible for the firmware running on the sensor node, the data pipeline to the server, and maintaining the project's requirements documentation throughout the lifecycle.
 
 ---
 
 ## My Role
 
-**Software Lead** — Writing the firmware for the Raspberry Pi Pico W sensor node, implementing MQTT communication over Wi-Fi to transmit encrypted sensor data to the Pi 5 base station, and developing the local website for data display.
+**Software Lead** — Wrote the firmware for the Raspberry Pi Pico W sensor node, implemented MQTT communication over Wi-Fi to transmit AES-128-CBC encrypted sensor data to the Pi 5 base station, and developed the local website for data display.
 
-**Requirements Manager** — Maintaining the official requirements list, ensuring requirements are traceable through design decisions, and updating them as the project evolves through the engineering lifecycle phases.
+**Requirements Manager** — Maintained the official requirements list, ensured requirements were traceable through design decisions, and updated them as the project evolved through the engineering lifecycle phases.
 
 ---
 
@@ -64,15 +61,15 @@ The project is being run by a 9-person team with formal engineering roles. I am 
 
 Two designs were evaluated against four criteria before selecting a direction:
 
-| Criteria | Design 1 (1 solar panel, wood frame, 30s interval) | Design 2 (2 solar panels, metal frame, 2min interval) |
-|----------|-----------------------------------------------------|-------------------------------------------------------|
+| Criteria | Design 1 (wood frame, 30s interval) | Design 2 (metal shelving, 2min interval) |
+|----------|--------------------------------------|------------------------------------------|
 | Budget | 6/10 | 8/10 |
 | Efficiency | 9/10 | 7/10 |
 | Ease of Cyber Protection | 8/10 | 8/10 |
-| Weatherproof | 7/10 | 9/10 |
-| **Total** | **30/40** | **32/40** |
+| Weatherproof | 9/10 | 7/10 |
+| **Total** | **32/40** | **30/40** |
 
-**Design 2 was selected.** Metal shelving is cheaper and more durable than wood long-term, and two solar panels provide more reliable power. The tradeoff is a slower 2-minute data interval vs 30 seconds, but the team judged durability and budget as higher priorities.
+**Design 1 was selected.** Wood is easier to construct with available shop tools and has a longer lifespan before degradation than bare metal. The tradeoff is a smaller enclosure budget, but the faster 30-second data interval and simpler fabrication outweighed the durability advantage of metal shelving.
 
 ---
 
@@ -83,47 +80,39 @@ Two designs were evaluated against four criteria before selecting a direction:
 - **BME680 Environmental Sensor** — measures temperature, humidity, barometric pressure, and air quality
 - **2× Solar Panels** — primary power source for the sensor node
 - **Li-Ion 3.7V battery + charging module** — power storage and regulation
-- **Metal shelving** — weatherproof enclosure frame
-- **3D printed components** — custom mounts and housing (filament provided)
-- Diodes, breadboard, wiring, and general electrical supplies
+- **Wood frame** — weatherproof enclosure
+- **3D printed components** — custom mounts and housing
 
 ---
 
 ## Software
 
-The sensor node firmware (Pico W) will:
-- Poll the BME680 sensor at regular intervals
-- Encrypt the data payload
-- Transmit to the Pi 5 via MQTT over Wi-Fi
+The sensor node firmware (Pico W):
+- Polls the BME680 sensor every 30 seconds
+- Encrypts the data payload using AES-128-CBC with a random IV per message
+- Transmits to the Pi 5 via MQTT over Wi-Fi, reconnecting fresh each cycle for reliability on solar power
 
-The base station (Pi 5) will:
-- Receive and log incoming data to a database at 30-second intervals
-- Host a password-protected local website displaying live and historical readings
+The base station (Pi 5):
+- Receives and logs incoming data to a database
+- Hosts a password-protected local website displaying live and historical readings
 
-*Implementation in progress — this section will be updated as development continues.*
+LED status codes indicate system state: slow green blink for Wi-Fi/MQTT connection, single green flash for successful publish, red blinks for recoverable errors, and rapid red blink for a fatal error before hardware reset.
 
 ---
 
-## Cybersecurity Considerations
+## Cybersecurity
 
 Identified vulnerabilities and mitigations:
 
-- **Insecure code** — following secure coding practices, input validation, no hardcoded credentials
-- **Unencrypted data transmission** — all MQTT payloads encrypted before transmission
+- **Insecure code** — Bandit static analysis run on all Pico W code; secure coding practices enforced, no hardcoded credentials
+- **Unencrypted data transmission** — all MQTT payloads encrypted with AES-128-CBC before transmission
 - **Eavesdropping** — encrypted wireless communication prevents interception of sensor data
 - **DDoS on the website** — rate limiting and access controls on the locally hosted site
+- **Abnormal activity** — Pi 5 logs all anomalous communication events
+- **Wi-Fi timeout** — implemented to prevent the radio from hanging between cycles
 
 ---
 
-## Current Status
+## Outcome
 
-- Raspberry Pi 5 set up and configured as base station router — **done**
-- BME680 sensor wired and reading data from Pico W — *pending*
-- MQTT communication implemented between Pico W and Pi 5 — *pending*
-- Data logging to database — *pending*
-- Local website built and hosted — *pending*
-- Encryption and cyber protections implemented — *pending*
-- Physical enclosure assembled and weatherproofed — *pending*
-- Solar power system wired and tested — *pending*
-
-*This page will be updated as the project progresses.*
+The station was completed and tested successfully. It collects temperature, humidity, pressure, and air quality data every 30 seconds, displays it on a live password-protected web dashboard, and passed water resistance testing with no ingress. The project finished approximately 90 minutes behind schedule and $62 under budget.

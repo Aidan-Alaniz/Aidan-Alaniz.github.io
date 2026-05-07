@@ -1,9 +1,15 @@
 archery:
   high_score: 284
   high_score_date: "March 1, 2025"
-  career_average: 267.06
+  career_average: 267.33
   nasp_profile: "https://nasptournaments.org/archertournamenthistory.aspx?ahid=656398&src=as"
   tournaments:
+    - date: "2026-04-09"
+      label: "AL State '26"
+      name: "Alabama State Championship"
+      score: 272
+      hs_boys_rank: "81 / 313"
+      grade_rank: "22 / 63"
     - date: "2026-03-26"
       label: "Riverton Pre-St. '26"
       name: "Riverton Pre-State Tournament"

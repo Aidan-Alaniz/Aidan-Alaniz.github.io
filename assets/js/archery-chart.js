@@ -7,17 +7,18 @@ var labels = [
   "GH Raider '25","JCHS '25","N.AL Pre-Reg '25","Eagle Eye '25","Buckhorn Reg '25",
   "Riverton Pre-St '25","AL State '25","Centershot Out '25","E. Nationals '25",
   "Cullman KO '26","GH Raider '26","Knights Shoot '26","Liberty MS '26",
-  "JCHS '26","N.AL Pre-Reg '26","Buckhorn Reg '26","Riverton Pre-St '26"
+  "JCHS '26","N.AL Pre-Reg '26","Buckhorn Reg '26","Riverton Pre-St '26","AL State '26"
 ];
 
-var scores = [244,254,260,284,258,263,266,259,269,274,271,274,279,269,266,275,275];
+var scores = [244,254,260,284,258,263,266,259,269,274,271,274,279,269,266,275,275,272];
 
 var names = [
   "GH Raider Bash","JCHS Archery Tournament","North Alabama Pre-Regional","7th Eagle Eye Archery Tournament",
   "Buckhorn Regional","Riverton Pre-State Tournament","Alabama State Championship",
   "Centershot Bullseye Outdoor","2025 US Eastern Nationals","Cullman Kick-Off",
   "GH Raider Bash","5th Annual Knights Shootout","Liberty Middle School Tournament",
-  "JCHS Archery Tournament","North Alabama Pre-Regional","Buckhorn Regional","Riverton Pre-State Tournament"
+  "JCHS Archery Tournament","North Alabama Pre-Regional","Buckhorn Regional",
+  "Riverton Pre-State Tournament","Alabama State Championship"
 ];
 
 // Linear regression trendline
