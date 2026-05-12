@@ -24,7 +24,7 @@ I have competed in NASP (National Archery in the Schools Program) for two season
 | High Score | **{{ site.data.athletics.archery.high_score }}** ({{ site.data.athletics.archery.high_score_date }}) |
 | Career Average | **{{ site.data.athletics.archery.career_average }}** |
 | Range | 10 / 15 Meter Indoor |
-| Tournaments Competed | 16 |
+| Tournaments Competed | 19 |
 
 ### Score Progression
 
