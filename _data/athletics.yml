@@ -1,9 +1,15 @@
 archery:
   high_score: 284
   high_score_date: "March 1, 2025"
-  career_average: 267.33
+  career_average: 267.94
   nasp_profile: "https://nasptournaments.org/archertournamenthistory.aspx?ahid=656398&src=as"
   tournaments:
+    - date: "2026-05-07"
+      label: "E. Nationals '26"
+      name: "2026 Eastern National Bullseye Tournament"
+      score: 279
+      hs_boys_rank: "517 / 2528"
+      grade_rank: "140 / 584"
     - date: "2026-04-09"
       label: "AL State '26"
       name: "Alabama State Championship"
