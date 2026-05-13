@@ -22,6 +22,12 @@ var names = [
   "2026 Eastern National Bullseye Tournament"
 ];
 
+// Career average — calculated from scores array so it stays in sync automatically
+var avg = scores.reduce(function(a, b) { return a + b; }, 0) / scores.length;
+var avgRounded = Math.round(avg * 100) / 100;
+var avgEl = document.getElementById('careerAvg');
+if (avgEl) avgEl.textContent = avgRounded.toFixed(2);
+
 // Linear regression trendline
 var n = scores.length;
 var sumX=0, sumY=0, sumXY=0, sumXX=0;

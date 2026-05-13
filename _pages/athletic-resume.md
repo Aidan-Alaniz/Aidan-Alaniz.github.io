@@ -9,7 +9,7 @@ header_type: base
 
 [aidandalaniz@gmail.com](mailto:aidandalaniz@gmail.com) · [NASP Profile]({{ site.data.athletics.archery.nasp_profile }}){:target="_blank"} · [MileSplit Profile]({{ site.data.athletics.cross_country.milesplit_profile }}){:target="_blank"}
 
-<p style="font-size: 0.8rem; color: #888; margin-bottom: 1.5rem;">Last updated: March 20, 2026</p>
+<p style="font-size: 0.8rem; color: #888; margin-bottom: 1.5rem;">Last updated: {{ site.time | date: "%B %-d, %Y" }}</p>
 
 I compete in NASP archery at the national level and run cross country at the varsity level. Both sports have pushed me to develop consistency, focus, and the ability to perform under pressure.
 
@@ -17,14 +17,14 @@ I compete in NASP archery at the national level and run cross country at the var
 
 ## Archery — NASP
 
-I have competed in NASP (National Archery in the Schools Program) for two seasons, consistently improving my scores and placing competitively at the regional and state level. I shoot the 10/15 meter indoor range and have competed in over 15 sanctioned tournaments, including the US Eastern Nationals. In the 2024-25 season, our team placed **3rd at the 2025 Alabama State Championship**.
+I have competed in NASP (National Archery in the Schools Program) for two seasons, consistently improving my scores and placing competitively at the regional and state level. I shoot the 10/15 meter indoor range and have competed in {{ site.data.athletics.archery.tournaments | size }} sanctioned tournaments, including the US Eastern Nationals. In the 2025-26 season, our team **tied for 1st at the 2026 Alabama State Championship** — matching the winning score but placing 2nd on tens countback — and finished **13th at the 2026 Eastern Nationals**.
 
 | Stat | Value |
 |------|-------|
 | High Score | **{{ site.data.athletics.archery.high_score }}** ({{ site.data.athletics.archery.high_score_date }}) |
-| Career Average | **{{ site.data.athletics.archery.career_average }}** |
+| Career Average | **<span id="careerAvg">—</span>** |
 | Range | 10 / 15 Meter Indoor |
-| Tournaments Competed | 19 |
+| Tournaments Competed | {{ site.data.athletics.archery.tournaments | size }} |
 
 ### Score Progression
 

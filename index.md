@@ -34,7 +34,7 @@ I'm a junior at ASCTE with a passion for athletics, engineering, and building th
 
     <a href="/athletic-resume/" style="width: 100%; background: #1c2d36; border-radius: 6px; padding: 0.75rem 1.25rem; text-align: center; border-left: 3px solid #FF304F; text-decoration: none; display: block;">
       <div style="font-size: 0.95rem; font-weight: bold; color: #d8e4ea;">National Competitor</div>
-      <div style="font-size: 0.8rem; color: #888; margin-top: 0.2rem;">2025 US Eastern Nationals &mdash; Archery</div>
+      <div style="font-size: 0.8rem; color: #888; margin-top: 0.2rem;">2026 US Eastern Nationals &mdash; Archery</div>
     </a>
 
   </div>
@@ -69,7 +69,7 @@ I'm a junior at ASCTE with a passion for athletics, engineering, and building th
 
 ## Athletics
 
-I compete in two sports — NASP archery nationally and cross country at the varsity level for ASCTE. In archery I have a career average of 266.56 and a high score of 284, with results at regionals, state, and nationals including a 3rd place team finish at the Alabama State Championship. In cross country I have a road 5K PR of 22:38 and am working to improve each season.
+I compete in two sports — NASP archery nationally and cross country at the varsity level for ASCTE. In archery I have a high score of {{ site.data.athletics.archery.high_score }}, with results at regionals, state, and nationals including a tied-for-1st team finish at the 2026 Alabama State Championship and a 13th place team finish at the 2026 Eastern Nationals. In cross country I have a road 5K PR of {{ site.data.athletics.cross_country.pr_5k }} and am working to improve each season.
 
 [View Athletic Resume →](/athletic-resume/)
 
