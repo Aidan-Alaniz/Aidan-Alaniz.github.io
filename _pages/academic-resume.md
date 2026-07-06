@@ -5,7 +5,7 @@ layout: default
 header_type: base
 ---
 
-## Aidan Alaniz — Academic Resume
+## Aidan Alaniz - Academic Resume
 
 [aidandalaniz@gmail.com](mailto:aidandalaniz@gmail.com) • [LinkedIn](https://www.linkedin.com/in/aidan-alaniz/){:target="_blank"} • [GitHub](https://github.com/Aidan-Alaniz){:target="_blank"}
 
@@ -21,8 +21,10 @@ Senior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 **Alabama School of Cyber Technology and Engineering (ASCTE)**  
 *GPA: 4.21*
+*ACT: 30, composite 31*
+*PSAT: 1250*
 
-**AP Courses — Completed**
+**AP Courses - Completed**
 - AP Computer Science Principles
 - AP Computer Science A
 - AP Language and Composition
@@ -125,7 +127,7 @@ Senior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 - SGA Team Representative
 - Residential Activities Council Subcommittee Leader
 - Junior Fire Academy
-- Civil Air Patrol — completed multiple supervised flights in actual aircraft through the CAP cadet flight program
+- Civil Air Patrol - completed multiple supervised flights in actual aircraft through the CAP cadet flight program
 - University of Alabama CTF competition - top three team
 
 ---

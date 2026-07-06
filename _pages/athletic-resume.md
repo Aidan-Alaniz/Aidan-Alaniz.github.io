@@ -5,7 +5,7 @@ layout: default
 header_type: base
 ---
 
-## Aidan Alaniz — Athletic Resume
+## Aidan Alaniz - Athletic Resume
 
 [aidandalaniz@gmail.com](mailto:aidandalaniz@gmail.com) · [NASP Profile]({{ site.data.athletics.archery.nasp_profile }}){:target="_blank"} · [MileSplit Profile]({{ site.data.athletics.cross_country.milesplit_profile }}){:target="_blank"}
 
@@ -15,7 +15,7 @@ I compete in NASP archery at the national level and run cross country at the var
 
 ---
 
-## Archery — NASP
+## Archery - NASP
 
 I have competed in NASP (National Archery in the Schools Program) for two seasons, consistently improving my scores and placing competitively at the regional and state level. I shoot the 10/15 meter indoor range and have competed in {{ site.data.athletics.archery.tournaments | size }} sanctioned tournaments, including the US Eastern Nationals. In the 2025-26 season, our team **tied for 1st at the 2026 Alabama State Championship** - matching the winning score but placing 2nd on tens scored - and finished **13th at the 2026 Eastern Nationals**.
 

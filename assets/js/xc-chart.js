@@ -4,16 +4,17 @@
 // Grey points = non-standard conditions (trail run or long/hilly course).
 // Update pointColors array to match — use '#FF304F' for standard road races, '#888888' for non-standard.
 
-var xcLabels = ["Sep '24", "Nov '24", "Dec '24", "Sep '25"];
-var xcTimes  = [1956, 1379, 1715, 1358]; // 32:36, 22:59, 28:35, 22:38 in seconds
+var xcLabels = ["Sep '24", "Nov '24", "Dec '24", "Sep '25", "May '26"];
+var xcTimes  = [1956, 1379, 1715, 1358, 1699]; // 32:36, 22:59, 28:35, 22:38 in seconds
 var xcNames  = [
-  "Darter Dash (Trail) — 32:36",
-  "5K Turkey Trot — 22:59",
-  "The Reindeer Dash 5K — 28:35",
-  "The Southern Showcase — 22:38"
+  "Darter Dash (Trail) - 32:36",
+  "5K Turkey Trot - 22:59",
+  "The Reindeer Dash 5K - 28:35",
+  "The Southern Showcase - 22:38",
+  "Race to the Tower - 28:19"
 ];
 
-var pointColors = ['#888888', '#FF304F', '#888888', '#FF304F'];
+var pointColors = ['#888888', '#FF304F', '#888888', '#FF304F', '#888888'];
 
 // Linear regression trendline
 var n = xcTimes.length;
