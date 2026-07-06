@@ -1,4 +1,4 @@
-# Aidan Alaniz — Personal Portfolio
+# Aidan Alaniz - Personal Portfolio
 
 Personal portfolio site for Aidan Alaniz, built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
