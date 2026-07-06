@@ -7,7 +7,7 @@ header_type: base
 
 ## Certifications
 
-These are certifications I have earned outside of regular coursework. Each one required dedicated training and a formal assessment to obtain.
+These are certifications I have earned outside regular coursework. Each one required dedicated training and a formal assessment to obtain.
 
 ---
 

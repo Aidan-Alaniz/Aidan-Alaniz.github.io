@@ -8,7 +8,7 @@ Personal portfolio site for Aidan Alaniz, built with [Jekyll](https://jekyllrb.c
 
 ## About
 
-I'm a junior at the Alabama School of Cyber Technology and Engineering (ASCTE). I plan to study kinesiology and become a physical therapist, with a focus on athletic performance and recovery. Outside of that I compete nationally in NASP archery, run varsity cross country, and build software and hardware projects because I enjoy it.
+I'm a senior at the Alabama School of Cyber Technology and Engineering (ASCTE). I compete nationally in NASP archery, run varsity cross country, and build software and hardware projects because I enjoy it.
 
 This site serves as a portfolio of my projects, academic and athletic resumes, and certifications.
 
@@ -44,18 +44,6 @@ _includes/
 
 ---
 
-## Adding Content
-
-**New project:** Create a new `.md` file in `_projects/` with the standard front matter. Tags are picked up automatically by the filter on the projects page — no other changes needed.
-
-**New archery tournament:** Add an entry to `_data/athletics.yml` under `archery.tournaments`. The chart and tournament table on the athletic resume update automatically.
-
-**New XC race:** Add an entry to `_data/athletics.yml` under `cross_country.results`. Update `xc-chart.js` to add the data point — see comments in that file for instructions.
-
-**Profile photo:** Add a file named `bio-photo.jpg` to `assets/images/`. It will appear on the About page, sidebar, and social previews automatically.
-
----
-
 ## Running Locally
 
 ```bash
@@ -69,6 +57,6 @@ Site runs at `http://localhost:4000`.
 
 ## Notes
 
-- All custom styles are in `_includes/custom/custom_head.html` — not in `assets/css/custom.css`
-- Scroll animations are handled by `assets/js/scroll-animate.js` — new standard markdown content animates automatically
+- All custom styles are in `_includes/custom/custom_head.html` - not in `assets/css/custom.css`
+- Scroll animations are handled by `assets/js/scroll-animate.js` - new standard markdown content animates automatically
 - Built with assistance from [Claude AI](https://claude.ai) (Anthropic)

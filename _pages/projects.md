@@ -8,7 +8,7 @@ header_type: base
 <!-- Load filter script first so filterTag() is defined before any button is clicked -->
 <script src="/assets/js/project-filter.js"></script>
 
-A collection of my technical and engineering projects — from school assignments to personal builds.
+A collection of all my various projects - from school assignments to personal builds.
 
 <div id="tagFilters">
   <div id="tagFilterInner" class="tag-filter-collapsed">

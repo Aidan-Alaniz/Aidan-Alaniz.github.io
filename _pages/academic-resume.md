@@ -13,25 +13,23 @@ header_type: base
 
 ## Summary
 
-Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong foundation in programming, engineering, and team-based project work. Intending to study kinesiology and pursue a career in physical therapy, with a focus on athletic performance and recovery. Skilled in Python, Java, and CAD, with hands-on experience in hardware fabrication, microcontrollers, and systems engineering. Competitive nationally in NASP archery and varsity cross country athlete.
+Senior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong foundation in programming, engineering, and team-based project work. Skilled in Python, Java, and CAD, with hands-on experience in hardware fabrication, microcontrollers, and systems engineering. Competitive nationally in NASP archery and varsity cross country athlete.
 
 ---
 
 ## Education
 
 **Alabama School of Cyber Technology and Engineering (ASCTE)**  
-*GPA: 4.16*
+*GPA: 4.21*
 
 **AP Courses — Completed**
 - AP Computer Science Principles
 - AP Computer Science A
 - AP Language and Composition
-
-**AP Courses — Current**
-- AP Calculus
+- AP Calculus AB
 
 **Electives**
-- Intro to Arduinos and Microcontrollers
+- Intro to Arduino and Microcontrollers
 - Model Based System Engineering
 - Russian 1
 
@@ -39,7 +37,13 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 
 ## Experience
 
-*Total Service Hours (to date): 45*
+*Total Service Hours (to date): 102*
+
+**Pine Mountain Volunteer Fire** · 2026
+- Helped out at our local volunteer only fire department, washing and laying out hoses to dry. Later helped pressure test hoses as well as salvage sections of hose in good condition for further use.
+
+**Residential Activities Council** · 2025-2026
+- Continued to plan and organize events, but with more of a leadership position, being put in charge of a subcommittee responsible for planning House-Based activities and running them.
 
 **Local Pine Mountain Community Road Cleanup** · *2025*
 - Participated in an organized community cleanup of local roads, coordinating with other volunteers to cover assigned sections and properly dispose of collected waste.
@@ -47,7 +51,7 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 **Paralympic Time Trial Volunteer** · *2025*
 - Directed participants along the course route, ensured athlete safety at assigned positions, and communicated course conditions to event staff throughout the event.
 
-**Residential Activities Council** · *2024–Present*
+**Residential Activities Council** · *2024–2025*
 - Plan, organize, and run weekend activities for ASCTE's residential student body. Currently leading a subcommittee responsible for House Events — pitching ideas, coordinating logistics, and executing events on campus.
 
 **ASCTE Halloween Trunk-or-Treat** · *2024*
@@ -63,13 +67,13 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 **Fusion 360 Trebuchet** · *401*
 - Served as Communications Lead in a structured team engineering project, coordinating between the Arm and Frame design groups to ensure compatible specifications. Team won four class awards including longest launch (87.5ft with counterweight) and highest average range (80.8ft vs 81.6ft predicted).
 
-**BioDesign — Plastic-Degrading Cell** · *301/401*
+**BioDesign - Plastic-Degrading Cell** · *301/401*
 - Designed and presented a custom engineered microorganism to break down ocean plastic. Evaluated three candidate designs using a structured scoring matrix, sourced biological components from the iGEM Parts Registry, and presented the final design to the class.
 
 **Banterbird** · *301/401*
-- Built a full-stack Twitter-inspired web application in Python, implementing a REST-style backend, external API integration, user post creation, and a dynamic feed — first project requiring both front-end and server-side development simultaneously.
+- Built a full-stack Twitter-inspired web application in Python, implementing a python backend, external API integration, user post creation, and a dynamic feed - first project requiring both front-end and server-side development simultaneously.
 
-**White Paper — Effects of Modern Footwear** · *201/101*
+**White Paper - Effects of Modern Footwear** · *201/101*
 - Researched and wrote a formal white paper arguing that modern shoe design negatively impacts biomechanics and foot health, drawing on peer-reviewed literature from ACSM and NCBI. Directly relevant to my intended kinesiology and physical therapy career path.
 
 ---
@@ -98,14 +102,19 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 - Soldering and Circuitry
 - Hardware Fabrication
 - 3D Printing
+- MBSE (Cameo) design
+- Russian Language
+- Fire & EMS
 
 ---
 
 ## Awards & Honors
 
-- President's List (3×)
-- Mu Alpha Theta — Mathematics Honor Society
-- Beta Club — Academic Honor Society
+- President's List (4×)
+- Mu Alpha Theta - Mathematics Honor Society
+- Beta Club - Academic Honor Society
+- 3rd Place Division 1 UACTF Team
+- ACT 30+ Club
 
 ---
 
@@ -117,14 +126,15 @@ Junior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 - Residential Activities Council Subcommittee Leader
 - Junior Fire Academy
 - Civil Air Patrol — completed multiple supervised flights in actual aircraft through the CAP cadet flight program
+- University of Alabama CTF competition - top three team
 
 ---
 
 ## Certifications
 
-- Wilderness First Responder
-- Basic Life Support
-- First Aid and CPR
+- Wilderness First Responder · *NOLS*
+- Basic Life Support · *AHA*
+- First Aid and CPR · *AHA*
 - IS-100.c: Introduction to the Incident Command System · *FEMA*
 - IS-200.c: Basic Incident Command System for Initial Response · *FEMA*
 

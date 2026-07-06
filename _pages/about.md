@@ -14,7 +14,7 @@ header_type: base
   />
   <div class="about-hero__text">
     <h2>Aidan Alaniz</h2>
-    <p><strong>Junior</strong> · Alabama School of Cyber Technology and Engineering (ASCTE)</p>
+    <p><strong>Senior · Alabama School of Cyber Technology and Engineering (ASCTE)</strong></p>
     <p>I'm a student, athlete, and maker. I care about doing things well — whether that's competing nationally in archery, pushing my pace in cross country, or building something from scratch in code or wood.</p>
   </div>
 </div>
@@ -23,11 +23,11 @@ header_type: base
 
 ## Bio
 
-I grew up wanting to understand how things work — whether that's a piece of code, a physical mechanism, or the human body. That curiosity led me to ASCTE, where I've built a strong foundation in programming, CAD design, 3D printing, and electronics. But outside of the classroom, my biggest focus has always been athletics.
+I grew up wanting to understand how things work - whether that's a piece of code, a physical mechanism, or the human body. That curiosity led me to ASCTE, where I've built a strong foundation in programming, CAD design, 3D printing, and electronics. But outside the classroom, my biggest focus has always been athletics.
 
-I compete in NASP archery at the national level and run cross country with the varsity team at ASCTE. I train consistently year-round and care deeply about improving — both as an athlete and as a person. My goal is to study kinesiology in college and become a physical therapist. I want to understand the how and why behind human movement and exercise — how the body adapts, recovers, and performs — and use that knowledge to work directly with athletes, helping them get back to full strength and perform at their best.
+I compete in NASP archery at the national level and run cross country with the varsity team at ASCTE. I train consistently year-round and care deeply about improving - both as an athlete and as a person. Outside of school athletics, I enjoy working out and playing Ultimate Frisbee with other residential students.
 
-Programming and engineering are things I enjoy on the side. I like building things — games, tools, hardware projects — and I'll keep doing that whether or not it's part of my career. ASCTE has given me a unique mix of technical skills that most people pursuing kinesiology won't have. A huge proportion of the coursework is also team-based, which has built real experience collaborating across different roles and working through problems with people who have different approaches than me. I think that combination — technical background, teamwork experience, and a real passion for athletics and human performance — will set me apart.
+Programming and engineering are things I enjoy on the side. I like building things — games, tools, hardware projects — and I'll keep doing that whether it's part of my career or not. ASCTE has given me a unique mix of technical skills that most people going into any career may be lacking in. A huge proportion of the coursework is also team-based, which has built real experience collaborating across different roles and working through problems with people who have different approaches than me. I think that combination - technical background, teamwork experience, and a real passion for athletics and human performance - will set me apart.
 
 ---
 
@@ -42,6 +42,8 @@ Programming and engineering are things I enjoy on the side. I like building thin
 - 3D Printing
 - Soldering & Circuitry
 - Excel
+- Computer literacy
+- MBSE (Cameo) design
 
 ### Professional
 - Leadership & Team Management
@@ -49,32 +51,38 @@ Programming and engineering are things I enjoy on the side. I like building thin
 - Event Planning & Coordination
 - Critical Thinking
 
+### Other
+- Russian Language
+- Fire & EMS experience
+
 ---
 
 ## Interests
 
-- **Archery** — Competing at the national NASP level, constantly working to improve consistency and score
-- **Cross Country & Running** — Varsity runner, focused on pushing my personal bests each season
-- **Software Projects** — Building things for fun: games, tools, web apps
-- **Engineering & Making** — 3D printing, electronics, and hands-on problem solving
-- **Fitness & Training** — Consistent year-round training, always looking to improve performance and understand the body better
+- **Archery** - Competing at the national NASP level, constantly improving consistency and score
+- **Cross Country & Running** - Varsity runner, focused on pushing my personal bests each season
+- **Software Projects** - Building things for fun: games, tools, web apps
+- **Engineering & Making** - 3D printing, electronics, and hands-on problem-solving
+- **Fitness & Training** - Consistent year-round training, always looking to improve performance
+- **Fire & EMS** - Helping others and providing aid to those in need
+- **Russian** - Learning a new language has been a new and exciting experience, and I want to continue that trend
 
 ---
 
 ## Goals
 
-- Earn a degree in Kinesiology and become a licensed physical therapist
-- Understand the biomechanics and physiology behind human performance and recovery
-- Work with athletes in a clinical or sports performance setting
+- Earn a bachelors degree in a field I am passionate about
+- Continue learning the Russian language
+- Volunteer with a local fire department and gain the necessary certifications
 - Continue competing in archery at a high level through college
-- Keep building software and hardware projects on the side — it's something I've always done and want to continue
-- Use the technical background and teamwork experience from ASCTE to bring a different perspective to healthcare and sports medicine
+- Keep building software and hardware projects on the side
+- Use the technical background and teamwork experience from ASCTE to bring a different perspective to my career and schoolwork going forward
 
 ---
 
 ## Contact
 
-Feel free to reach out — I'm always open to connecting.
+Feel free to reach out - I'm always open to connecting.
 
 - **Email:** [aidandalaniz@gmail.com](mailto:aidandalaniz@gmail.com)
 - **LinkedIn:** [linkedin.com/in/aidan-alaniz](https://www.linkedin.com/in/aidan-alaniz/){:target="_blank"}

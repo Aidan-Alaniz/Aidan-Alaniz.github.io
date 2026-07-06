@@ -17,7 +17,7 @@ I compete in NASP archery at the national level and run cross country at the var
 
 ## Archery — NASP
 
-I have competed in NASP (National Archery in the Schools Program) for two seasons, consistently improving my scores and placing competitively at the regional and state level. I shoot the 10/15 meter indoor range and have competed in {{ site.data.athletics.archery.tournaments | size }} sanctioned tournaments, including the US Eastern Nationals. In the 2025-26 season, our team **tied for 1st at the 2026 Alabama State Championship** — matching the winning score but placing 2nd on tens countback — and finished **13th at the 2026 Eastern Nationals**.
+I have competed in NASP (National Archery in the Schools Program) for two seasons, consistently improving my scores and placing competitively at the regional and state level. I shoot the 10/15 meter indoor range and have competed in {{ site.data.athletics.archery.tournaments | size }} sanctioned tournaments, including the US Eastern Nationals. In the 2025-26 season, our team **tied for 1st at the 2026 Alabama State Championship** - matching the winning score but placing 2nd on tens scored - and finished **13th at the 2026 Eastern Nationals**.
 
 | Stat | Value |
 |------|-------|
@@ -28,7 +28,7 @@ I have competed in NASP (National Archery in the Schools Program) for two season
 
 ### Score Progression
 
-The chart below shows my score across all sanctioned tournaments, ordered chronologically. The dashed line represents my career average. Hovering over a point shows the full tournament name.
+The chart below shows my score across all sanctioned tournaments, ordered chronologically. The dashed line represents my career trend. Hovering over a point shows the full tournament name.
 
 <div class="chart-container">
   <canvas id="archeryChart"></canvas>
@@ -108,7 +108,7 @@ The chart below shows my 5K times across recorded races. Lower is faster — the
 <div class="chart-container">
   <canvas id="xcChart"></canvas>
 </div>
-<p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;"><span style="color: #888;">&#9679;</span> Grey points = non-standard conditions — Darter Dash (trail run) &amp; Reindeer Dash (long course, hilly). Not directly comparable to standard road 5Ks.</p>
+<p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;"><span style="color: #888;">&#9679;</span> Grey points = non-standard conditions. Not directly comparable to standard high school 5Ks.</p>
 
 ### Personal Records
 
@@ -145,7 +145,7 @@ The table below reflects my recorded meet results for the current season. Full r
   </tbody>
 </table>
 
-*Results updated each season — full history available on MileSplit.*
+*Results updated each season — full history available on MileSplit and UltraSignup.*
 
 <!-- All chart/toggle scripts loaded here so they never block page rendering -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
