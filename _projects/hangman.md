@@ -17,17 +17,17 @@ A classic Hangman game playable in the terminal, written in Python. The player g
 ## Features
 
 - Random word selection
-- Letter guess tracking — shows correct and incorrect guesses
+- Letter guess tracking - shows correct and incorrect guesses
 - Visual attempt counter
 - Win/loss detection
 
 ## Tools & Skills Used
 
-- **Python** — game logic, string manipulation, user input
+- **Python** - game logic, string manipulation, user input
 
 ## What I Learned
 
-This project taught me more than I expected for something simple. On the technical side I got solid practice with string manipulation, game loop management, and output formatting — including colored text and display elements that scale dynamically based on word length (the gallows drawing grows as wrong guesses accumulate). I also applied basic OOP principles to keep the display logic separate from the game logic. It was a good lesson in how much care goes into making a terminal program feel polished rather than just functional.
+This project taught me more than I expected for something simple. On the technical side I got solid practice with string manipulation, game loop management, and output formatting - including colored text and display elements that scale dynamically based on word length (the gallows drawing grows as wrong guesses accumulate). I also applied basic OOP principles to keep the display logic separate from the game logic. It was a good lesson in how much care goes into making a terminal program feel polished rather than just functional.
 
 ## Source
 

@@ -7,7 +7,7 @@ title: "Aidan Alaniz"
 subtitle: '<a href="https://www.ascte.org" target="_blank" rel="noopener">Senior at ASCTE</a> &bull; <a href="https://www.linkedin.com/in/aidan-alaniz/" target="_blank" rel="noopener">LinkedIn</a> &bull; <a href="https://github.com/Aidan-Alaniz" target="_blank" rel="noopener">GitHub</a>'
 ---
 
-I'm a senior at ASCTE with a passion for athletics, engineering, and building things. I compete nationally in archery and run varsity cross country, and I'm planning to study kinesiology and become a physical therapist. On the side, I build software and hardware projects because it's something I've always enjoyed — and the technical skills I've picked up at ASCTE give me a perspective most people in healthcare won't have.
+I'm a senior at ASCTE with a passion for athletics, engineering, and building things. I compete nationally in archery and run varsity cross country, and I'm planning to pursue a career in the outdoors, where I can work with my hands. On the side, I build software and hardware projects because it's something I've always enjoyed - and the technical skills I've picked up at ASCTE give me a perspective most people won't have coming out of high school.
 
 [Learn more about me →](/about/)
 
@@ -34,7 +34,7 @@ I'm a senior at ASCTE with a passion for athletics, engineering, and building th
 
     <a href="/athletic-resume/" style="width: 100%; background: #1c2d36; border-radius: 6px; padding: 0.75rem 1.25rem; text-align: center; border-left: 3px solid #FF304F; text-decoration: none; display: block;">
       <div style="font-size: 0.95rem; font-weight: bold; color: #d8e4ea;">National Competitor</div>
-      <div style="font-size: 0.8rem; color: #888; margin-top: 0.2rem;">2026 US Eastern Nationals &mdash; Archery</div>
+      <div style="font-size: 0.8rem; color: #888; margin-top: 0.2rem;">2026 US Eastern Nationals &ndash; Archery</div>
     </a>
 
   </div>
@@ -69,7 +69,7 @@ I'm a senior at ASCTE with a passion for athletics, engineering, and building th
 
 ## Athletics
 
-I compete in two sports — NASP archery nationally and cross country at the varsity level for ASCTE. In archery I have a high score of {{ site.data.athletics.archery.high_score }}, with results at regionals, state, and nationals including a tied for 1st team finish at the 2026 Alabama State Championship and a 13th place team finish at the 2026 Eastern Nationals. In cross country I have a 5K PR of {{ site.data.athletics.cross_country.pr_5k }} and am working to improve this season.
+I compete in two sports - NASP archery nationally and cross country at the varsity level for ASCTE. In archery I have a high score of {{ site.data.athletics.archery.high_score }}, with results at regionals, state, and nationals including a tied for 1st team finish at the 2026 Alabama State Championship and a 13th place team finish at the 2026 Eastern Nationals. In cross country I have a 5K PR of {{ site.data.athletics.cross_country.pr_5k }} and am working to improve this season.
 
 [View Athletic Resume →](/athletic-resume/)
 

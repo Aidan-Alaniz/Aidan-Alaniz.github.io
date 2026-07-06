@@ -15,7 +15,7 @@ header_type: base
   <div class="about-hero__text">
     <h2>Aidan Alaniz</h2>
     <p><strong>Senior · Alabama School of Cyber Technology and Engineering (ASCTE)</strong></p>
-    <p>I'm a student, athlete, and maker. I care about doing things well — whether that's competing nationally in archery, pushing my pace in cross country, or building something from scratch in code or wood.</p>
+    <p>I'm a student, athlete, and maker. I care about doing things well - whether that's competing nationally in archery, pushing my pace in cross country, or building something from scratch in code or wood.</p>
   </div>
 </div>
 

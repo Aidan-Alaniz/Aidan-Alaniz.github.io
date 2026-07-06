@@ -22,11 +22,11 @@ A fully playable text-based Blackjack game written in Python. The game runs in t
 
 ## Tools & Skills Used
 
-- **Python** — game logic, user input handling, control flow
+- **Python** - game logic, user input handling, control flow
 
 ## What I Learned
 
-This was a good exercise in structuring a program around a set of rules and edge cases. Managing game state across turns and handling all the possible outcomes cleanly taught me a lot about how to think through logic before writing it. One of the more interesting challenges was handling rounds — managing data structures like the deck, hands, and scores that need to update frequently and stay consistent across a full game loop without getting out of sync.
+This was a good exercise in structuring a program around a set of rules and edge cases. Managing game state across turns and handling all the possible outcomes cleanly taught me a lot about how to think through logic before writing it. One of the more interesting challenges was handling rounds - managing data structures like the deck, hands, and scores that need to update frequently and stay consistent across a full game loop without getting out of sync.
 
 ## Source
 

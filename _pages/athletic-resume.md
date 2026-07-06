@@ -103,7 +103,7 @@ I compete in cross country as a varsity runner for ASCTE, racing the standard 5K
 
 ### 5K Progression
 
-The chart below shows my 5K times across recorded races. Lower is faster — the trendline shows consistent improvement.
+The chart below shows my 5K times across recorded races. Lower is faster - the trendline shows consistent improvement.
 
 <div class="chart-container">
   <canvas id="xcChart"></canvas>
@@ -145,7 +145,7 @@ The table below reflects my recorded meet results for the current season. Full r
   </tbody>
 </table>
 
-*Results updated each season — full history available on MileSplit and UltraSignup.*
+*Results updated each season - full history available on MileSplit and UltraSignup.*
 
 <!-- All chart/toggle scripts loaded here so they never block page rendering -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>

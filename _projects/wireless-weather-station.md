@@ -1,6 +1,6 @@
 ---
 title: "Wireless Weather Station"
-excerpt: "Built a solar-powered wireless weather station that collects environmental data and hosts it on a local website — serving as Software Lead and Requirements Manager on a 9-person engineering team at ASCTE."
+excerpt: "Built a solar-powered wireless weather station that collects environmental data and hosts it on a local website - serving as Software Lead and Requirements Manager on a 9-person engineering team at ASCTE."
 date: 2026-03-19
 tags:
   - Hardware
@@ -15,15 +15,15 @@ tags:
 
 A full-scale engineering project developed as part of ASCTE's Engineering Lifecycle curriculum, with Auburn University as the customer. The goal was to design and build a solar-powered wireless weather station that collects environmental data via sensors, transmits it wirelessly to a base station, and hosts a secure local website where users can view live and historical readings.
 
-The project was run by a 9-person team with formal engineering roles. I served as **Software Lead** and **Requirements Manager** — responsible for the firmware running on the sensor node, the data pipeline to the server, and maintaining the project's requirements documentation throughout the lifecycle.
+The project was run by a 9-person team with formal engineering roles. I served as **Software Lead** and **Requirements Manager** - responsible for the firmware running on the sensor node, the data pipeline to the server, and maintaining the project's requirements documentation throughout the lifecycle.
 
 ---
 
 ## My Role
 
-**Software Lead** — Wrote the firmware for the Raspberry Pi Pico W sensor node, implemented MQTT communication over Wi-Fi to transmit AES-128-CBC encrypted sensor data to the Pi 5 base station, and developed the local website for data display.
+**Software Lead** - Wrote the firmware for the Raspberry Pi Pico W sensor node, implemented MQTT communication over Wi-Fi to transmit AES-128-CBC encrypted sensor data to the Pi 5 base station, and developed the local website for data display.
 
-**Requirements Manager** — Maintained the official requirements list, ensured requirements were traceable through design decisions, and updated them as the project evolved through the engineering lifecycle phases.
+**Requirements Manager** - Maintained the official requirements list, ensured requirements were traceable through design decisions, and updated them as the project evolved through the engineering lifecycle phases.
 
 ---
 
@@ -75,13 +75,13 @@ Two designs were evaluated against four criteria before selecting a direction:
 
 ## Hardware
 
-- **Raspberry Pi 5** — base station, acting as router and hosting the local website
-- **Raspberry Pi Pico W** — sensor node, reads BME680 data and transmits wirelessly
-- **BME680 Environmental Sensor** — measures temperature, humidity, barometric pressure, and air quality
-- **2× Solar Panels** — primary power source for the sensor node
-- **Li-Ion 3.7V battery + charging module** — power storage and regulation
-- **Wood frame** — weatherproof enclosure
-- **3D printed components** — custom mounts and housing
+- **Raspberry Pi 5** - base station, acting as router and hosting the local website
+- **Raspberry Pi Pico W** - sensor node, reads BME680 data and transmits wirelessly
+- **BME680 Environmental Sensor** - measures temperature, humidity, barometric pressure, and air quality
+- **2× Solar Panels** - primary power source for the sensor node
+- **Li-Ion 3.7V battery + charging module** - power storage and regulation
+- **Wood frame** - weatherproof enclosure
+- **3D printed components** - custom mounts and housing
 
 ---
 
@@ -104,12 +104,12 @@ LED status codes indicate system state: slow green blink for Wi-Fi/MQTT connecti
 
 Identified vulnerabilities and mitigations:
 
-- **Insecure code** — Bandit static analysis run on all Pico W code; secure coding practices enforced, no hardcoded credentials
-- **Unencrypted data transmission** — all MQTT payloads encrypted with AES-128-CBC before transmission
-- **Eavesdropping** — encrypted wireless communication prevents interception of sensor data
-- **DDoS on the website** — rate limiting and access controls on the locally hosted site
-- **Abnormal activity** — Pi 5 logs all anomalous communication events
-- **Wi-Fi timeout** — implemented to prevent the radio from hanging between cycles
+- **Insecure code** - Bandit static analysis run on all Pico W code; secure coding practices enforced, no hardcoded credentials
+- **Unencrypted data transmission** - all MQTT payloads encrypted with AES-128-CBC before transmission
+- **Eavesdropping** - encrypted wireless communication prevents interception of sensor data
+- **DDoS on the website** - rate limiting and access controls on the locally hosted site
+- **Abnormal activity** - Pi 5 logs all anomalous communication events
+- **Wi-Fi timeout** - implemented to prevent the radio from hanging between cycles
 
 ---
 

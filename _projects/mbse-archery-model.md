@@ -1,6 +1,6 @@
 ---
 title: "MBSE Archery Practice Model"
-excerpt: "A Model-Based Systems Engineering final project modeling the structure and behavior of an archery practice session using SysML — including block definition, use case, state machine, internal block, and sequence diagrams."
+excerpt: "A Model-Based Systems Engineering final project modeling the structure and behavior of an archery practice session using SysML - including block definition, use case, state machine, internal block, and sequence diagrams."
 date: 2026-05-01
 tags:
   - MBSE
@@ -12,7 +12,7 @@ tags:
 
 ## Overview
 
-A final project for ASCTE's Model-Based Systems Engineering (MBSE) course. The goal was to build a complete SysML system model of an archery practice session, covering both structural and behavioral perspectives. The subject — the archery team — was chosen because of my direct familiarity with how the system actually operates.
+A final project for ASCTE's Model-Based Systems Engineering (MBSE) course. The goal was to build a complete SysML system model of an archery practice session, covering both structural and behavioral perspectives. The subject - the archery team - was chosen because of my direct familiarity with how the system actually operates.
 
 ---
 
@@ -26,7 +26,7 @@ Defines the structural components of a practice session. People (coach, archers,
 
 ### Use Case Diagrams
 
-Two use case diagrams capture the system in both contexts: **Archery Practice** and **Archery Competition**. The practice diagram covers the full session lifecycle — range setup, equipment selection, shooting ends, arrow retrieval, and coach feedback. Extension points on use cases like Correct Stance and Fix Release Technique represent corrective actions triggered only when the coach identifies a specific issue.
+Two use case diagrams capture the system in both contexts: **Archery Practice** and **Archery Competition**. The practice diagram covers the full session lifecycle - range setup, equipment selection, shooting ends, arrow retrieval, and coach feedback. Extension points on use cases like Correct Stance and Fix Release Technique represent corrective actions triggered only when the coach identifies a specific issue.
 
 ### State Machine Diagram
 
@@ -38,7 +38,7 @@ Models the internal structure of a practice session, showing how component insta
 
 ### Sequence Diagram
 
-Models a single end of a practice round as an ordered interaction between the coach, archer, bow, arrows, and target — from the coach calling archers to the line through arrow retrieval and post-end feedback.
+Models a single end of a practice round as an ordered interaction between the coach, archer, bow, arrows, and target - from the coach calling archers to the line through arrow retrieval and post-end feedback.
 
 ---
 
