@@ -27,7 +27,7 @@ I grew up wanting to understand how things work - whether that's a piece of code
 
 I compete in NASP archery at the national level and run cross country with the varsity team at ASCTE. I train consistently year-round and care deeply about improving - both as an athlete and as a person. Outside of school athletics, I enjoy working out and playing Ultimate Frisbee with other residential students.
 
-Programming and engineering are things I enjoy on the side. I like building things — games, tools, hardware projects — and I'll keep doing that whether it's part of my career or not. ASCTE has given me a unique mix of technical skills that most people going into any career may be lacking in. A huge proportion of the coursework is also team-based, which has built real experience collaborating across different roles and working through problems with people who have different approaches than me. I think that combination - technical background, teamwork experience, and a real passion for athletics and human performance - will set me apart.
+Programming and engineering are things I enjoy on the side. I like building things - games, tools, hardware projects - and I'll keep doing that whether it's part of my career or not. ASCTE has given me a unique mix of technical skills that most people going into any career may be lacking in. A huge proportion of the coursework is also team-based, which has built real experience collaborating across different roles and working through problems with people who have different approaches than me. I think that combination - technical background, teamwork experience, and a real passion for athletics and human performance - will set me apart.
 
 ---
 
