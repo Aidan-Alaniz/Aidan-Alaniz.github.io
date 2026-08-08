@@ -99,7 +99,7 @@ The table below lists all sanctioned NASP tournaments I have competed in, includ
 
 [View MileSplit Profile →]({{ site.data.athletics.cross_country.milesplit_profile }}){:target="_blank"} &nbsp;&bull;&nbsp; [View UltraSignup Profile →]({{ site.data.athletics.cross_country.ultrasignup_profile }}){:target="_blank"}
 
-I compete in cross country as a varsity runner for ASCTE, racing the standard 5K course. I missed most of the 2025 season due to injury, but have been working to improve my times consistently and continue to push my personal bests at each meet.
+I have competed in cross country as a varsity runner for ASCTE, racing 5 kilometer courses. I missed most of the 2025 season due to injury, but have been working to improve my times through improving myself during the off season.
 
 ### 5K Progression
 
@@ -119,7 +119,7 @@ The chart below shows my 5K times across recorded races. Lower is faster - the t
 
 ### Meet Results
 
-The table below reflects my recorded meet results for the current season. Full race history and splits are available on my MileSplit profile.
+The table below reflects my recorded meet results across all seasons. Full race history and splits are available on my MileSplit profile.
 
 <!-- XC results table — data comes from _data/athletics.yml -->
 <table class="xc-table">

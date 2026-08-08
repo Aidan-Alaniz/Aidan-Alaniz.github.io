@@ -13,14 +13,14 @@ header_type: base
 
 ## Summary
 
-Senior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a strong foundation in programming, engineering, and team-based project work. Skilled in Python, Java, and CAD, with hands-on experience in hardware fabrication, microcontrollers, and systems engineering. Competitive nationally in NASP archery and varsity cross country athlete.
+Senior at Springville High School (SHS) with a strong foundation in programming, engineering, and team-based project work. Skilled in Python, Java, and CAD, with hands-on experience in hardware fabrication, microcontrollers, and systems engineering. Competitive nationally in NASP archery and varsity cross country athlete.
 
 ---
 
 ## Education
 
 **Alabama School of Cyber Technology and Engineering (ASCTE)**  
-*GPA: 4.21*
+*GPA: 4.52*
 *ACT: 30, composite 31*
 *PSAT: 1250*
 
@@ -29,6 +29,10 @@ Senior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 - AP Computer Science A
 - AP Language and Composition
 - AP Calculus AB
+
+**AP Courses - Current**
+- AP Literature and Composition
+- AP Biology
 
 **Electives**
 - Intro to Arduino and Microcontrollers
@@ -127,7 +131,7 @@ Senior at the Alabama School of Cyber Technology and Engineering (ASCTE) with a 
 - SGA Team Representative
 - Residential Activities Council Subcommittee Leader
 - Junior Fire Academy
-- Civil Air Patrol - completed multiple supervised flights in actual aircraft through the CAP cadet flight program
+- Civil Air Patrol - completed multiple supervised flights in actual aircraft through the CAP cadet flight program during middle school
 - University of Alabama CTF competition - top three team
 
 ---

@@ -4,10 +4,10 @@ permalink: /
 author_profile: true
 header_type: "hero"
 title: "Aidan Alaniz"
-subtitle: '<a href="https://www.ascte.org" target="_blank" rel="noopener">Senior at ASCTE</a> &bull; <a href="https://www.linkedin.com/in/aidan-alaniz/" target="_blank" rel="noopener">LinkedIn</a> &bull; <a href="https://github.com/Aidan-Alaniz" target="_blank" rel="noopener">GitHub</a>'
+subtitle: '<a href="https://shs.sccboe.org" target="_blank" rel="noopener">Senior at SHS</a> &bull; <a href="https://www.linkedin.com/in/aidan-alaniz/" target="_blank" rel="noopener">LinkedIn</a> &bull; <a href="https://github.com/Aidan-Alaniz" target="_blank" rel="noopener">GitHub</a>'
 ---
 
-I'm a senior at ASCTE with a passion for athletics, engineering, and building things. I compete nationally in archery and run varsity cross country, and I'm planning to pursue a career in the outdoors, where I can work with my hands. On the side, I build software and hardware projects because it's something I've always enjoyed - and the technical skills I've picked up at ASCTE give me a perspective most people won't have coming out of high school.
+I'm a senior at Springville High School with a passion for athletics, engineering, and building things. I compete nationally in archery and ran varsity cross country, and I'm planning to pursue a career in the outdoors or athletics, where I can work with my hands. On the side, I build software and hardware projects because it's something I've always enjoyed - and the technical skills I've picked up at ASCTE give me a perspective most people won't have coming out of high school.
 
 [Learn more about me →](/about/)
 
@@ -46,7 +46,7 @@ I'm a senior at ASCTE with a passion for athletics, engineering, and building th
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; flex: 1; min-width: 280px;">
 
     <a href="/academic-resume/" style="flex: 1; min-width: 120px; background: #1c2d36; border-radius: 6px; padding: 1rem 1.25rem; text-align: center; text-decoration: none; display: block;">
-      <div style="font-size: 2rem; font-weight: bold; color: #FF304F;">4.16</div>
+      <div style="font-size: 2rem; font-weight: bold; color: #FF304F;">4.52</div>
       <div style="font-size: 0.85rem; color: #888; margin-top: 0.25rem;">GPA</div>
     </a>
 
@@ -69,7 +69,7 @@ I'm a senior at ASCTE with a passion for athletics, engineering, and building th
 
 ## Athletics
 
-I compete in two sports - NASP archery nationally and cross country at the varsity level for ASCTE. In archery I have a high score of {{ site.data.athletics.archery.high_score }}, with results at regionals, state, and nationals including a tied for 1st team finish at the 2026 Alabama State Championship and a 13th place team finish at the 2026 Eastern Nationals. In cross country I have a 5K PR of {{ site.data.athletics.cross_country.pr_5k }} and am working to improve this season.
+I have competed in two sports - NASP archery nationally and cross country at the varsity level for ASCTE. In archery I have a high score of {{ site.data.athletics.archery.high_score }}, with results at regionals, state, and nationals including a tied for 1st team finish at the 2026 Alabama State Championship and a 13th place team finish at the 2026 Eastern Nationals. In cross country I have a 5K PR of {{ site.data.athletics.cross_country.pr_5k }} and am working to improve this season. Outside of school sports, I enjoy playing Pickleball, Spikeball, and Ultimate Frisbee in my free time.
 
 [View Athletic Resume →](/athletic-resume/)
 
