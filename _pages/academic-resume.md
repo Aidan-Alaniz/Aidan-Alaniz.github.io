@@ -121,6 +121,7 @@ Senior at Springville High School (SHS) with a strong foundation in programming,
 - Beta Club - Academic Honor Society
 - 3rd Place Division 1 UACTF Team
 - ACT 30+ Club
+- AP Scholars Award (2x)
 
 ---
 
