@@ -7,7 +7,7 @@ title: "Aidan Alaniz"
 subtitle: '<a href="https://shs.sccboe.org" target="_blank" rel="noopener">Senior at SHS</a> &bull; <a href="https://www.linkedin.com/in/aidan-alaniz/" target="_blank" rel="noopener">LinkedIn</a> &bull; <a href="https://github.com/Aidan-Alaniz" target="_blank" rel="noopener">GitHub</a>'
 ---
 
-I'm a senior at Springville High School with a passion for athletics, engineering, and building things. I compete nationally in archery and ran varsity cross country, and I'm planning to pursue a career in the outdoors or athletics, where I can work with my hands. On the side, I build software and hardware projects because it's something I've always enjoyed - and the technical skills I've picked up at ASCTE give me a perspective most people won't have coming out of high school.
+I'm a senior at Springville High School with a passion for athletics, engineering, and the outdoors. I compete nationally in archery and ran varsity cross country, and I'm planning to pursue a career in the outdoors or athletics, where I can work with my hands. On the side, I build software and hardware projects because it's something I've always enjoyed - and the technical skills I've picked up at ASCTE give me a perspective most people won't have coming out of high school.
 
 [Learn more about me →](/about/)
 
