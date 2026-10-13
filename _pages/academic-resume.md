@@ -55,7 +55,7 @@ Senior at Springville High School (SHS) with a strong foundation in programming,
 - Participated in an organized community cleanup of local roads, coordinating with other volunteers to cover assigned sections and properly dispose of collected waste.
 
 **Paralympic Time Trial Volunteer** · *2025*
-- Directed participants along the course route, ensured athlete safety at assigned positions, and communicated course conditions to event staff throughout the event.
+- Helped direct participants along the course route and monitor the course throughout the event.
 
 **Residential Activities Council** · *2024–2025*
 - Plan, organize, and run weekend activities for ASCTE's residential student body. Currently leading a subcommittee responsible for House Events — pitching ideas, coordinating logistics, and executing events on campus.
