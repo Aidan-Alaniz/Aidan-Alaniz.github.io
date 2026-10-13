@@ -20,8 +20,8 @@ Senior at Springville High School (SHS) with a strong foundation in programming,
 ## Education
 
 **Alabama School of Cyber Technology and Engineering (ASCTE)**  
-*GPA: 4.52*
-*ACT: 30, composite 31*
+*GPA: 4.52*&nbsp;&nbsp;&nbsp;
+*ACT: 32*&nbsp;&nbsp;&nbsp;
 *PSAT: 1250*
 
 **AP Courses - Completed**
