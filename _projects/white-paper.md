@@ -1,5 +1,5 @@
 ---
-title: "White Paper - The Negative Effects of Modern-Day Shoes"
+title: "The Negative Effects of Modern-Day Shoes"
 excerpt: "A research white paper arguing that modern footwear design negatively impacts foot health and biomechanics, written as part of ASCTE's 201/101 curriculum."
 date: 2024-09-01
 tags:
