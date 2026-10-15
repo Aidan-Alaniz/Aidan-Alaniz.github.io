@@ -98,6 +98,10 @@ Senior at Springville High School (SHS) with a strong foundation in programming,
 
 ## Leadership
 
+**HOSA Chapter Reporter** · *ECTC*
+
+- Current member of Eden Career Tech Center's HOSA chapter, attending leadership and healthcare conferences and creating the annual scrapbook.
+
 **Junior SGA Team Representative** · *ASCTE*
 
 - Represent my class in Student Government meetings, contributing to school-wide decisions and assisting in the planning and execution of large campus events.
