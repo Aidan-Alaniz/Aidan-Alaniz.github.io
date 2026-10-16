@@ -93,7 +93,7 @@ function toMMSS(s) {
             grid: { color: 'rgba(255,255,255,0.05)' }
           },
           y: {
-            reverse: true,
+            reverse: false,
             ticks: {
               color: '#d8e4ea',
               callback: function(val) { return toMMSS(val); }
