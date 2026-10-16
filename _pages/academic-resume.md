@@ -118,18 +118,27 @@ Senior at Springville High School (SHS) with a strong foundation in programming,
 
 ## Skills
 
-- Python Programming
-- Java Programming
+### Programming & Tech
+- Python
+- Java
 - Linux Terminal
 - Virtual Machines
-- CAD Design
-- Excel
-- Soldering and Circuitry
-- Hardware Fabrication
+- CAD Design (Fusion 360)
 - 3D Printing
+- Soldering & Circuitry
+- Excel
+- Computer literacy
 - MBSE (Cameo) design
+
+### Professional
+- Leadership & Team Management
+- Public Speaking
+- Event Planning & Coordination
+- Critical Thinking
+
+### Other
 - Russian Language
-- Fire & EMS
+- Fire & EMS experience
 
 ---
 
